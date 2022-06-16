@@ -84,7 +84,7 @@ featuredrecipesButton[1].addEventListener("click", function () {
   featuredrecipesImage.src = featuredrecipesArray[featuredrecipesNum];
 });
 
-/*--------------------crauser1------------------------*/
+/*--------------------Carousel1------------------------*/
 let h5 = document.querySelectorAll("#crauser1Options>h5");
 
 let crauser1Array = [
@@ -106,57 +106,172 @@ for (let i = 0; i < crauser1Array.length; i++) {
 }
 
 /*----------------Best Sellers----------------*/
-let bestsellersImg1 = document.querySelector(
-  "#bestsellers>div>div:nth-child(1)>img"
-);
-let bestsellersImg2 = document.querySelector(
-  "#bestsellers>div>div:nth-child(2)>img"
-);
-let bestsellersImg3 = document.querySelector(
-  "#bestsellers>div>div:nth-child(3)>img"
-);
-let bestsellersImg4 = document.querySelector(
-  "#bestsellers>div>div:nth-child(4)>img"
-);
-let bestsellersImg5 = document.querySelector(
-  "#bestsellers>div>div:nth-child(5)>img"
-);
 
-let bestsellersArray = [
-  "https://www.bigbasket.com/media/uploads/p/s/40044729_7-bb-royal-maida.jpg",
-  "https://www.bigbasket.com/media/uploads/p/s/10000083_17-fresho-chilli-green-long-medium.jpg",
-  "https://www.bigbasket.com/media/uploads/p/s/10000405_19-bb-popular-rice-raw-sona-masoori.jpg",
-  "https://www.bigbasket.com/media/uploads/p/s/1200049_2-bb-combo-bb-royal-sona-masoori-raw-rice-10-kg-toor-dal-1kg-sugar-1kg.jpg",
-  "https://www.bigbasket.com/media/uploads/p/s/1214883_7-fresho-tender-coconut-water-no-added-sugar-flavours.jpg",
-  "https://www.bigbasket.com/media/uploads/p/s/40042838_11-bb-royal-channa-dal.jpg",
-  "https://www.bigbasket.com/media/uploads/p/s/1209799_4-dove-cream-beauty-bathing-bar.jpg",
-  "https://www.bigbasket.com/media/uploads/p/s/30005421_6-bb-popular-kabuli-channa.jpg",
-  "https://www.bigbasket.com/media/uploads/p/s/263860_8-dabur-gulabari-premium-rose-water-paraben-free-skin-toner.jpg",
-  "https://www.bigbasket.com/media/uploads/p/s/1212930_1-borges-extra-virgin-olive-oil-1l-pet-bottle-durum-wheat-pasta-penne-rigate-500g-pouch.jpg",
+let array = [
+  {
+    discount: "Get 20% OFF ",
+    imgurl:
+      "https://www.bigbasket.com/media/uploads/p/s/1201414_1-fresho-onion.jpg",
+    brand: "Fresho",
+    name: "Onion",
+    Kg: "5 Kg",
+    strike: "Rs 120",
+    mrp: "115",
+    dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
+
+    ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+  },
+  {
+    discount: "Get 20% OFF ",
+    imgurl:
+      "https://www.bigbasket.com/media/uploads/p/s/40162469_6-fresho-potato-new-crop.jpg",
+    brand: "Fresho",
+    name: "Patato",
+    Kg: "2 kg",
+    strike: "Rs 87.50",
+    mrp: "70",
+    dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
+    ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+  },
+  {
+    discount: "Get 20% OFF ",
+    imgurl:
+      "https://www.bigbasket.com/media/uploads/p/s/10000298_10-fresho-banganapalli-mango.jpg",
+    brand: "Fresho",
+    name: "Banganapalli Mango",
+    Kg: "1 kg",
+    strike: "Rs 119.5",
+    mrp: "91",
+    dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
+    ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+  },
+  {
+    discount: "Get 15% OFF ",
+    imgurl:
+      "https://www.bigbasket.com/media/uploads/p/s/10000070_15-fresho-carrot-orange.jpg",
+    brand: "Fresho",
+    name: "Carrot-orange",
+    Kg: "1 kg",
+    strike: "Rs 81.25",
+    mrp: "61",
+    dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
+    ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+  },
+  {
+    discount: "Get 20% OFF ",
+    imgurl:
+      "https://www.bigbasket.com/media/uploads/p/s/10000203_16-fresho-tomato-local.jpg",
+    brand: "Fresho",
+    name: "Tomato - Local",
+    Kg: "1 kg",
+    strike: "Rs 100",
+    mrp: "70",
+    dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
+    ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+  },
+  {
+    discount: "Get 20% OFF ",
+    imgurl:
+      "https://www.bigbasket.com/media/uploads/p/s/1203678_1-fresho-tender-coconut-medium.jpg ",
+    brand: "Fresho",
+    name: "Tender Coconut - Medium",
+    Kg: "4 X 1 Pc",
+    strike: "Rs 215",
+    mrp: "172",
+    dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
+    ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+  },
+  {
+    discount: "Get 20% OFF ",
+    imgurl:
+      "https://www.bigbasket.com/media/uploads/p/s/10000143_14-fresho-ladies-finger.jpg",
+    brand: "Fresho",
+    name: "Ladies Finger",
+    Kg: "250g",
+    strike: "Rs 10.94",
+    mrp: "8.75",
+    dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
+    ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+  },
+  {
+    discount: "Get 20% OFF ",
+    imgurl:
+      "https://www.bigbasket.com/media/uploads/p/s/10000201_15-fresho-tomato-hybrid.jpg",
+    brand: "Fresho",
+    name: "Tomato - Hybrid",
+    Kg: "500g",
+    strike: "Rs 43.75",
+    mrp: "35",
+    dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
+    ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+  },
+  {
+    discount: "Get 20% OFF ",
+    imgurl:
+      "https://www.bigbasket.com/media/uploads/p/s/10000031_21-fresho-banana-yelakki.jpg",
+    brand: "Fresho",
+    name: "Banana - Yelakki",
+    Kg: "1kg",
+    strike: "Rs 145",
+    mrp: "116",
+    dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+    ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+  },
+  {
+    discount: "Get 20% OFF ",
+    imgurl:
+      "https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg",
+    brand: "Fresho",
+    name: "Cauliflower",
+    Kg: "1 Pc  approx 400 g",
+    strike: "Rs 25",
+    mrp: "20",
+    dur: "Standard Delivery  23 June  9:00AM - 1:30PM",
+    ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+  },
 ];
 
-let bestsellersButton = document.querySelectorAll("#bestsellers>div>button");
+array.forEach((el) => {
+  let div = document.createElement("div");
 
-bestsellersButton[0].addEventListener("click", function () {
-  for (let i = 0, j = 0; i < bestsellersArray.length / 2; i++) {
-    bestsellersImg1.src = bestsellersArray[i + 0];
-    bestsellersImg2.src = bestsellersArray[i + 1];
-    bestsellersImg3.src = bestsellersArray[i + 2];
-    bestsellersImg4.src = bestsellersArray[i + 3];
-    bestsellersImg5.src = bestsellersArray[i + 4];
-  }
-});
+  let img = document.createElement("img");
+  img.src = el.imgurl;
+  let p1 = document.createElement("p");
+  p1.innerText = el.brand;
+  let h3 = document.createElement("h3");
+  h3.innerText = el.name;
+  let select = document.createElement("select");
+  let option1 = document.createElement("option");
+  option1.innerText = el.Kg + " Rs. " + +el.mrp;
+  select.append(option1);
+  let br = document.createElement("br");
 
-bestsellersButton[1].addEventListener("click", function () {
-  for (
-    let i = bestsellersArray.length - 1;
-    i >= bestsellersArray.length / 2;
-    i--
-  ) {
-    bestsellersImg1.src = bestsellersArray[i + 0];
-    bestsellersImg2.src = bestsellersArray[i + 1];
-    bestsellersImg3.src = bestsellersArray[i + 2];
-    bestsellersImg4.src = bestsellersArray[i + 3];
-    bestsellersImg5.src = bestsellersArray[i + 4];
-  }
+  let div2 = document.createElement("div");
+  let p2 = document.createElement("p");
+  p2.innerText = "MRP Rs. " + el.mrp / 5;
+  let span3 = document.createElement("span");
+  let img3 = document.createElement("img");
+  img3.src = "https://i.postimg.cc/mDLLrHtF/truck.jpg";
+  span3.append(img3);
+  let span4 = document.createElement("span");
+  span4.innerText = el.dur;
+  let br1 = document.createElement("br");
+  let span = document.createElement("span");
+  span.innerText = "Qty";
+  let input = document.createElement("input");
+  let button = document.createElement("button");
+  button.innerText = "ADD";
+  let span2 = document.createElement("span");
+  span2.style.marginLeft = "8px";
+  let img2 = document.createElement("img");
+  img2.style.width = "15px";
+  img2.src = el.ref;
+  span2.append(img2);
+  button.append(span2);
+
+  div2.append(p2, span3, span4, br1, span, input, button);
+
+  div.append(img, p1, h3, select, br, div2);
+
+  document.querySelector("#bestsellers>div").append(div);
 });

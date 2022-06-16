@@ -142,13 +142,81 @@ h2 {
 
 /*-------------Best Sellers----------*/
 #bestsellers {
-  width: 90%;
+  width: 95%;
   /* border: 1px solid black; */
   margin: auto;
   position: relative;
 }
 
-#bestsellers > div > button {
+#bestsellers > div > div {
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+#bestsellers > div > div > P:nth-child(2) {
+  margin: 10px 0px;
+  color: gray;
+}
+
+#bestsellers > div > div > h3 {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+#bestsellers > div > div > select {
+  width: 100%;
+  background-color: white;
+  border: 1px solid gray;
+  height: 22px;
+}
+
+#bestsellers > div > div > div {
+  width: 94%;
+  background-color: #f4f3f2;
+  padding: 6px;
+  font-size: 13px;
+  color: black;
+}
+
+#bestsellers > div > div > div > input {
+  height: 20px;
+  width: 50px;
+}
+
+#bestsellers > div > div > div > button {
+  box-sizing: border-box;
+  height: 25px;
+  margin: 15px 0px;
+  background-color: #fade7a;
+  border: hidden;
+  margin-left: 8px;
+  padding: 0px 12px;
+  border-radius: 10px;
+}
+
+#bestsellers > div > div > div > span:nth-child(5) {
+  width: 20px;
+  height: 100px;
+  font-size: 15px;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid gray;
+  padding: 3px;
+  margin-left: 10px;
+}
+
+#bestsellers > div > div > img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  cursor: pointer;
+}
+
+#bestsellers > div > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* #bestsellers > div > button {
   width: 30px;
   font-size: 25px;
   position: absolute;
@@ -159,30 +227,19 @@ h2 {
   cursor: pointer;
 }
 
-#bestsellers > div > button:nth-child(6) {
-  right: -30px;
+#bestsellers > div > button:nth-child(1) {
+  right: -20px;
 }
 
-#bestsellers > div > button:nth-child(7) {
-  left: -30px;
-}
+#bestsellers > div > button:nth-child(2) {
+  left: -20px;
+} */
 
 #bestsellers > div {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(auto);
   gap: 15px;
-}
-
-#bestsellers > div > div > img {
-  width: 100%;
-  border: 1px solid rgb(190, 190, 190);
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-#bestsellers > div > div > img:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #bestsellers > h2 {
@@ -1528,5 +1585,33 @@ h2 {
   /*---------------information--------------*/
   #information {
     width: 91%;
+  }
+
+  #information > h2:nth-child(5) {
+    display: none;
+  }
+
+  #information p:nth-child(3) {
+    display: none;
+  }
+
+  #information p:nth-child(6) {
+    display: none;
+  }
+
+  #information p:nth-child(7) {
+    display: none;
+  }
+
+  #information p:nth-child(8) {
+    display: none;
+  }
+
+  #information p:nth-child(9) {
+    display: none;
+  }
+
+  #information p:nth-child(10) {
+    display: none;
   }
 }
