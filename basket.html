@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>basket Page</title>
+    <link rel="stylesheet" href="basket.css" />
+  </head>
+  <body>
+    <!-- -------------Navbar---------- -->
+
+    <div class="navbar">
+      <div class="nav-flex">
+        <img
+          src="https://www.bigbasket.com/static/v2489/common/img/bb_logo.png"
+          alt=""
+        />
+
+        <div id="input">
+          <i class="fa fa-search"></i> &nbsp;<input
+            type="text"
+            placeholder="  Search for Products..."
+          />
+        </div>
+
+        <div id="address">
+          <img
+            src="https://img.icons8.com/external-glyph-zulfa-mahendra/48/undefined/external-delivery-food-delivery-2-glyph-zulfa-mahendra.png"
+          />
+          <p>Get in 6 hrs,</p>
+          &nbsp;
+          <p>Home: Sector-47, Gurgaon</p>
+        </div>
+
+        <div id="user-logo">
+          <img src="https://img.icons8.com/ios-glyphs/30/undefined/name.png" />
+        </div>
+
+        <div id="cart-logo">
+          <img
+            src="https://img.icons8.com/material/24/undefined/shopping-cart--v1.png"
+          />
+          <p id="numitem"></p>
+        </div>
+      </div>
+
+      <div class="nav-flex">
+        <div id="category">Shop by Category</div>
+        <div id="efv"><p>Exotic Fruite & Vegetables</p></div>
+        <div id="tea"><p>Tea</p></div>
+        <div id="ghee"><p>Ghee</p></div>
+        <div id="nandhini"><p>Nandhini</p></div>
+        <div id="Freshvegetables">
+          <p>
+            Fresh Vegetables &nbsp; <span id="drop-down">&#10095;&#10095;</span>
+          </p>
+        </div>
+        <div id="offers">
+          <img
+            src="https://img.icons8.com/metro/26/undefined/percentage2--v2.png"
+          />
+          <p>&nbsp; Offers</p>
+        </div>
+        <div id="offers">
+          <img
+            src="https://img.icons8.com/metro/26/undefined/percentage2--v2.png"
+          />
+          <p>&nbsp;Offers</p>
+        </div>
+      </div>
+    </div>
+    <!-- ------------main-------------- -->
+    <div id="main">
+      <h1>Your basket(<span id="Item">0</span> Item)</h1>
+      <hr />
+      <button id="promo">VIEW AVAILABLE PROMOS</button>
+      <div id="box">
+        <div id="tab">
+          <table>
+            <thead>
+              <tr id="tr1">
+                <th>ITEM DESCRIPTION</th>
+                <th>UNIT PRICE</th>
+                <th>QUANTITY</th>
+                <th>SUBTOTAL</th>
+                <th>SAVINGS</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <hr />
+          <div id="box1">
+            <div id="new">
+              <div id="box11">
+                <button id="butt0">
+                  <img
+                    style="width: 15px; height: 15px; margin-right: 10px"
+                    src="data:image/png;base64,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"
+                  />EMPTY BASKET
+                </button>
+                <button id="butt1">
+                  <img
+                    style="width: 15px; height: 15px; margin-right: 10px"
+                    src="data:image/png;base64,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"
+                  />CONTINUE SHOPPING
+                </button>
+              </div>
+              <div id="extra">
+                BB Royal Almond/Bandam Californion,Extra Bold 100gm + BB Royal
+                Honey 500gm
+              </div>
+            </div>
+            <div id="box12">
+              <div class="bos13" id="total">
+                <div>
+                  <h3>Subtotal</h3>
+                  <h3>Delivery Charges</h3>
+                </div>
+                <div>
+                  <h3 id="chan">Rs. 00</h3>
+                  <h3>**</h3>
+                </div>
+              </div>
+              <hr />
+              <div class="box13" id="tot">
+                <div>
+                  <h4>TOTAL</h4>
+                </div>
+                <div>
+                  <h4 id="fin">Rs. 00</h4>
+                </div>
+              </div>
+              <h5>* For this order: Accepted food coupon is Rs. 0.00</h5>
+              <hr />
+              <div id="box14">
+                <button id="check">CHECKOUT</button>
+                <h2>** Actual delivery charges computed at checkout time</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h6>Missed Something?</h6>
+      <hr />
+      <div id="else">
+        <div id="else1">
+          <button>Best Deals</button>
+          <hr />
+          <button>Top Offers</button>
+          <hr />
+          <button>Essentials</button>
+          <hr />
+          <button>Quick Bites</button>
+          <hr />
+        </div>
+        <div id="else2">
+          <div>
+            <img
+              src="https://www.bigbasket.com/media/uploads/p/s/40154922_3-nescafe-gold-blend-instant-coffee-powder-rich-smooth.jpg"
+              alt=""
+            />
+            <h1>Blend Instant Coffee Powder- Arabica</h1>
+            <p>50gm</p>
+            <p>Rs. 295</p>
+            <button>ADD</button>
+          </div>
+          <div>
+            <img
+              src="https://www.bigbasket.com/media/uploads/p/s/40145969_5-the-laughing-cow-creamy-cheese-triangles.jpg"
+              alt=""
+            />
+            <h1>Creamy Chease Triangles</h1>
+            <p id="p1">120 gm</p>
+            <p>Rs. 110</p>
+            <button>ADD</button>
+          </div>
+          <div>
+            <img
+              src="https://www.bigbasket.com/media/uploads/p/s/1214840_4-saffola-ring-noodles-oodles-yummy-masala.jpg"
+              alt=""
+            />
+            <h1>Ring Noodles- Oodles Yummy Masala</h1>
+            <p>1 pack</p>
+            <p>Rs. 180</p>
+            <button>ADD</button>
+          </div>
+          <div>
+            <img
+              src="https://www.bigbasket.com/media/uploads/p/s/40188092_8-bb-royal-100-pure-honey.jpg"
+              alt=""
+            />
+            <h1>100% Pure Honey</h1>
+            <p id="p2">1 pack</p>
+            <p>Rs. 269</p>
+            <button>ADD</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+    </html>
+    <script src="basket.js"></script>
+
+   

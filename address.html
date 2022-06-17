@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address page</title>
+    <link rel="stylesheet" href="address.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+        <div>
+            <img src="https://www.bigbasket.com/static/v2489/common/img/bb_logo.png" id="navimg" alt="">
+        </div>
+        <div>
+            <p id="p1">1860 123 1000</p>
+        </div>
+        </div>
+        <hr>
+        <div id="box">
+            <div id="box1">
+                <h1>Dilevary Address</h1>
+                <div id="address">
+                    <div id="add1">
+                        <h2>Personal Details</h2>
+                         <label>*Enter first Name</label>
+                    <input id="name" type="text">
+                         <label>*Enter last Name</label>
+                    <input type="text"><br>
+                         <lebel>* Enter contact number</lebel>
+                    <input id="con" type="number">
+                     </div>
+                  <div id="add2">
+                    <h2>Address Details</h2>
+                    <label>* House No</label>
+                    <input type="text">
+                    <label>Enter apartment name</label>
+                    <input type="text"><br>
+                    <label>Enter street details</label>
+                    <input id="street" type="text">
+                    <label>Enter landmark for easy reach out</label>
+                    <input type="text"><br>
+                    <lebel>Enter city name</lebel>
+                    <input id="city" type="text">
+                    <lebel>* Area details</lebel>
+                    <input type="text"><br>
+                    <lebel>* Enter Pincode</lebel>
+                    <input id="pin" type="number">
+                  </div> 
+                <h3>Choose nick name for this address</h3>
+                <button id="button1">HOME</button>
+                <button id="button2">OFFICE</button>
+                <button id="button3">OTHER</button>
+                <h3><input type="checkbox"> Set this as my default delivery address</h3>
+                <button id="button4">ADD ADDRESS</button>
+                <button id="button5">CANCEL</button>
+                </div>
+            </div>
+            <div id="box2">
+                <h2>Apply Voucher</h2>
+                <div id="box21">
+                <input id="VAl" placeholder="Enter voucher code"><button onclick="ALERT()">Apply</button>
+                <button style="color:#1986ec">1 Voucher applicable</button>
+                 </div>
+                <h2>Order Summary</h2>
+                <div id="box22">
+                    <div>
+                        <h3>Basket Value</h3>
+                        <h3>Delivery Charge</h3>
+                        <hr>
+                        <h3 style="color: black;">Total Amount Payable</h3>
+                        <h3 style="color: #a5cd39">Total Savings</h3>
+                    </div>
+                    <div>
+                        <h3 id="BR">Rs 00</h3>
+                        <h3 style="color: #a5cd39">FREE</h3>
+                        <hr>
+                        <h3 id="PR" style="color: black;">Rs 00</h3>
+                        <h3 id="TR" style="color: #a5cd39">Rs 00</h3>
+                    </div>
+                </div>
+            </div>
+            </div>
+         <div id="gift">
+            <h1 id="H1"> Is this a gift order? <button id="button6">ADD MASSAGE</button></h1>
+
+         </div>
+         <div id="dil">
+            <h1>Delivery Options</h1>
+         </div>
+         <div id="pay">
+            <h1> Payment Options</h1>
+         </div>
+    </div>
+</body>
+</html>
+<script src="address.js"></script>
