@@ -50,6 +50,25 @@ h2 {
   font-size: 14px;
 }
 
+#crauser1 > button {
+  position: absolute;
+  display: none;
+  top: 30%;
+  font-size: 20px;
+  width: 20px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid rgba(185, 185, 185, 0.5);
+}
+
+#crauser1 > button:nth-child(3) {
+  left: 10px;
+}
+
+#crauser1 > button:nth-child(4) {
+  right: 10px;
+}
+
 /*-------------Options1---------------*/
 #options1 {
   width: 80%;
@@ -153,6 +172,7 @@ h2 {
   border-radius: 10px;
   box-sizing: border-box;
   padding: 15px;
+  margin: 0px 8px;
 }
 
 #bestsellers > div > div > P:nth-child(2) {
@@ -194,6 +214,7 @@ h2 {
   margin-left: 8px;
   padding: 0px 12px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 #bestsellers > div > div > div > span:nth-child(5) {
@@ -216,11 +237,14 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* #bestsellers > div > button {
+#bestsellers > div > button {
   width: 30px;
+  height: 40px;
   font-size: 25px;
   position: absolute;
   top: 55%;
+  background-color: white;
+  border: 1px solid rgba(185, 185, 185, 0.5);
 }
 
 #bestsellers > div > button:hover {
@@ -228,18 +252,22 @@ h2 {
 }
 
 #bestsellers > div > button:nth-child(1) {
-  right: -20px;
+  right: -10px;
 }
 
 #bestsellers > div > button:nth-child(2) {
   left: -20px;
-} */
+}
+
+#bestsellersSlide {
+  overflow: hidden;
+}
 
 #bestsellers > div {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(auto);
-  gap: 15px;
+  grid-template-columns: repeat(10, 19.5%);
+  grid-template-rows: repeat(1, 470px);
+  gap: 5px;
 }
 
 #bestsellers > h2 {
@@ -770,6 +798,10 @@ h2 {
   line-height: 25px;
 }
 
+#information p:nth-child(10) {
+  margin-bottom: 20px;
+}
+
 #information > h2 {
   margin-top: 20px;
   color: #333333;
@@ -787,10 +819,12 @@ h2 {
 
 #information > ul {
   margin-top: 15px;
+  margin-left: 45px;
 }
 
 #information > button {
   margin: 20px 0px;
+  padding: 5px;
 }
 
 /*------------Media Queries for medium screen-------------*/
@@ -861,7 +895,7 @@ h2 {
 
   /*-------------Best Sellers----------*/
   #bestsellers {
-    width: 80%;
+    width: 95%;
   }
 
   #bestsellers > div {
@@ -871,17 +905,17 @@ h2 {
   }
 
   #bestsellers > div > button {
-    width: 15px;
+    width: 25px;
     font-size: 15px;
-    top: 55%;
+    top: 51%;
   }
 
-  #bestsellers > div > button:nth-child(6) {
-    right: -20px;
+  #bestsellers > div > button:nth-child(1) {
+    right: -5px;
   }
 
-  #bestsellers > div > button:nth-child(7) {
-    left: -20px;
+  #bestsellers > div > button:nth-child(2) {
+    left: -5px;
   }
 
   #bestsellers > h2 {
@@ -1186,10 +1220,6 @@ h2 {
     margin-top: 10px;
   }
 
-  #information > button {
-    margin: 20px 0px;
-  }
-
   #information > h2:nth-child(5) {
     display: none;
   }
@@ -1294,16 +1324,16 @@ h2 {
   }
 
   #bestsellers > div > button {
-    width: 10px;
+    width: 20px;
     font-size: 10px;
     top: 50%;
   }
 
-  #bestsellers > div > button:nth-child(6) {
+  #bestsellers > div > button:nth-child(1) {
     right: -5px;
   }
 
-  #bestsellers > div > button:nth-child(7) {
+  #bestsellers > div > button:nth-child(2) {
     left: -5px;
   }
 
@@ -1585,6 +1615,10 @@ h2 {
   /*---------------information--------------*/
   #information {
     width: 91%;
+  }
+
+  #information > button {
+    display: none;
   }
 
   #information > h2:nth-child(5) {

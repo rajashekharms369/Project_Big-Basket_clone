@@ -15,6 +15,17 @@ crauser2Button[0].addEventListener("click", function () {
   crauser2Image.src = crauser2imgArray[crauser2ImageNum];
 });
 
+crauser2Button[0].addEventListener("click", autoSlide);
+function autoSlide() {
+  if (crauser2ImageNum === 0) {
+    crauser2ImageNum = crauser2imgArray.length - 1;
+  } else {
+    crauser2ImageNum--;
+  }
+  crauser2Image.src = crauser2imgArray[crauser2ImageNum];
+}
+setInterval(autoSlide, 3000);
+
 crauser2Button[1].addEventListener("click", function () {
   if (crauser2ImageNum === crauser2imgArray.length - 1) {
     crauser2ImageNum = 0;
@@ -42,6 +53,17 @@ crauser3Button[0].addEventListener("click", function () {
   }
   crauser3Image.src = crauser3ImgArray[crauser3ImageNum];
 });
+
+crauser3Button[0].addEventListener("click", autoSlide2);
+function autoSlide2() {
+  if (crauser3ImageNum === 0) {
+    crauser3ImageNum = crauser3ImgArray.length - 1;
+  } else {
+    crauser3ImageNum--;
+  }
+  crauser3Image.src = crauser3ImgArray[crauser3ImageNum];
+}
+setInterval(autoSlide2, 3000);
 
 crauser3Button[1].addEventListener("click", function () {
   if (crauser3ImageNum === crauser3ImgArray.length - 1) {
@@ -75,6 +97,17 @@ featuredrecipesButton[0].addEventListener("click", function () {
   featuredrecipesImage.src = featuredrecipesArray[featuredrecipesNum];
 });
 
+featuredrecipesButton[0].addEventListener("click", autoSlide3);
+function autoSlide3() {
+  if (featuredrecipesNum === 0) {
+    featuredrecipesNum = featuredrecipesArray.length - 1;
+  } else {
+    featuredrecipesNum--;
+  }
+  featuredrecipesImage.src = featuredrecipesArray[featuredrecipesNum];
+}
+setInterval(autoSlide3, 3000);
+
 featuredrecipesButton[1].addEventListener("click", function () {
   if (featuredrecipesNum === featuredrecipesArray.length - 1) {
     featuredrecipesNum = 0;
@@ -105,6 +138,38 @@ for (let i = 0; i < crauser1Array.length; i++) {
   });
 }
 
+/*--------------------Carousel1 Auto Reload-------------------*/
+let crauser1Buttons = document.querySelectorAll("#crauser1>button");
+let crauser1Num = 0;
+crauser1Buttons[1].addEventListener("click", function () {
+  if (crauser1Num === 0) {
+    crauser1Num = crauser1Array.length - 1;
+  } else {
+    crauser1Num--;
+  }
+  crauser1Image.src = crauser1Array[crauser1Num];
+});
+
+crauser1Buttons[1].addEventListener("click", autoSlide4);
+function autoSlide4() {
+  if (crauser1Num === 0) {
+    crauser1Num = crauser1Array.length - 1;
+  } else {
+    crauser1Num--;
+  }
+  crauser1Image.src = crauser1Array[crauser1Num];
+}
+setInterval(autoSlide4, 3000);
+
+crauser1Buttons[0].addEventListener("click", function () {
+  if (crauser1Num === crauser1Array.length - 1) {
+    crauser1Num = 0;
+  } else {
+    crauser1Num++;
+  }
+  crauser1Image.src = crauser1Array[crauser1Num];
+});
+
 /*----------------Best Sellers----------------*/
 
 let array = [
@@ -117,7 +182,7 @@ let array = [
     Kg: "5 Kg",
     strike: "Rs 120",
     mrp: "115",
-    dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
+    dur: "Standard Delivery 22 June 9:00 AM  1:30 PM",
 
     ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
   },
@@ -248,7 +313,7 @@ array.forEach((el) => {
 
   let div2 = document.createElement("div");
   let p2 = document.createElement("p");
-  p2.innerText = "MRP Rs. " + el.mrp / 5;
+  p2.innerText = "MRP Rs. " + el.mrp / 2;
   let span3 = document.createElement("span");
   let img3 = document.createElement("img");
   img3.src = "https://i.postimg.cc/mDLLrHtF/truck.jpg";
@@ -274,4 +339,49 @@ array.forEach((el) => {
   div.append(img, p1, h3, select, br, div2);
 
   document.querySelector("#bestsellers>div").append(div);
+});
+
+/*--------------------information ReadMore-------------------*/
+
+let button = document.querySelector("#information>button");
+let h2 = document.querySelector("#information>h2:nth-child(5)");
+let p1 = document.querySelector("#information>p:nth-child(6)");
+let p2 = document.querySelector("#information>p:nth-child(7)");
+let p3 = document.querySelector("#information>p:nth-child(8)");
+let p4 = document.querySelector("#information>p:nth-child(9)");
+let p5 = document.querySelector("#information>p:nth-child(10)");
+
+h2.style.display = "none";
+p1.style.display = "none";
+p2.style.display = "none";
+p3.style.display = "none";
+p4.style.display = "none";
+p5.style.display = "none";
+
+document
+  .querySelector("#information>button")
+  .addEventListener("click", function () {
+    h2.style.display = "block";
+    p1.style.display = "block";
+    p2.style.display = "block";
+    p3.style.display = "block";
+    p4.style.display = "block";
+    p5.style.display = "block";
+    button.style.display = "none";
+  });
+
+/*---------------------bestsellersSlide--------------------*/
+let bestsellersSlide = document.querySelectorAll("#bestsellersSlide");
+let bestsellersSlidebuttons = document.querySelectorAll(
+  "#bestsellersSlide>button"
+);
+bestsellersSlide.forEach((el) => {
+  let newv = el.getBoundingClientRect();
+  let newv2 = newv.width;
+  bestsellersSlidebuttons[0].addEventListener("click", function () {
+    el.scrollLeft += newv2;
+  });
+  bestsellersSlidebuttons[1].addEventListener("click", function () {
+    el.scrollLeft -= newv2;
+  });
 });
