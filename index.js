@@ -1,3 +1,59 @@
+/*-----------------------Header JS part-----------------*/
+
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtn")) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
+};
+
+document.getElementById("user-logo").addEventListener("click", toggle);
+
+function toggle() {
+  var blur = document.getElementById("blur2");
+  blur.classList.toggle("active");
+  var popup = document.getElementById("popup2");
+  popup.classList.toggle("active");
+}
+
+document.querySelector("#logo").addEventListener("click", function () {
+  location.reload();
+});
+
+// setInterval(function(){alert("Hello")},3000);
+
+/*-----------------Main body JS part-------------------*/
+
 /*-------------Crauser2 JS Part----------------*/
 let crauser2Button = document.querySelectorAll("#crauser2>button");
 let crauser2Image = document.querySelector("#crauser2>img");
@@ -305,6 +361,9 @@ array.forEach((el) => {
   p1.innerText = el.brand;
   let h3 = document.createElement("h3");
   h3.innerText = el.name;
+  h3.style.color = "#565656";
+  h3.style.fontWeight = "lighter";
+  // h3.style.fontFamily = "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   let select = document.createElement("select");
   let option1 = document.createElement("option");
   option1.innerText = el.Kg + " Rs. " + +el.mrp;

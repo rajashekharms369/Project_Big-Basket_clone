@@ -3,11 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heavy Basket</title>
+    <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="https://www.bbassets.com/static/v2557/images/favicon.ico?v=2557"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="https://mir-s3-cdn-cf.behance.net/projects/404/1bee8e117159767.6070440e716cd.png"
+    />
+    <title>Big-Basket</title>
   </head>
   <body>
+    <!----------------------- Navbar Part ------------------------->
+
+    <div class="navbar">
+      <div class="nav-flex">
+        <img
+          id="logo"
+          src="https://github.com/rajashekharms369/Project_Big-Basket/blob/homepage/logo.png?raw=true"
+          alt=""
+        />
+
+        <div id="input">
+          <i class="fa fa-search"></i> &nbsp;<input
+            class="fa fa-search"
+            type="search"
+            placeholder="  Search for Products..."
+          />
+        </div>
+
+        <div id="address">
+          <img
+            src="https://img.icons8.com/external-glyph-zulfa-mahendra/48/undefined/external-delivery-food-delivery-2-glyph-zulfa-mahendra.png"
+          />
+          <p>Get in 6 hrs,</p>
+          &nbsp;
+          <p>Home: Sector-47, Gurgaon</p>
+        </div>
+
+        <div class="container2" id="blur2">
+          <div id="user-logo">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/undefined/name.png"
+            />
+          </div>
+        </div>
+        <div id="popup2">
+          <a href="#" onclick="toggle()">Close</a>
+        </div>
+
+        <div id="cart-logo">
+          <img
+            src="https://img.icons8.com/material/24/undefined/shopping-cart--v1.png"
+          />
+          <p id="numitem">0</p>
+        </div>
+      </div>
+
+      <div class="nav-flex">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            <p>Shop by Category &nbsp; <span id="downarrow">&#9660;</span></p>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Fruits & Vegetables</a>
+            <a href="#about">Foodgrains,Oil & Masala</a>
+            <a href="#contact">Bakery, Cakes & Dairy</a>
+            <a href="#home">Beverages</a>
+            <a href="#about">Snacks & Branded Foods</a>
+            <a href="#contact">Beauty & Hygiene</a>
+            <a href="#home">Cleaning & Household</a>
+            <a href="#about">Kitchen, Garden & Pets</a>
+            <a href="#contact">Eggs, Meat & Fish</a>
+            <a href="#home">Gourmet & World Food</a>
+            <a href="#about">Baby Care</a>
+          </div>
+        </div>
+
+        <div id="efv"><p>Exotic Fruite & Vegetables</p></div>
+        <div id="tea"><p>Tea</p></div>
+        <div id="ghee"><p>Ghee</p></div>
+        <div id="nandhini"><p>Nandhini</p></div>
+
+        <div id="Freshvegetables" class="dropdown1">
+          <button class="dropbtn1">
+            Fresh vegetables <span id="drop-down">&#10095;&#10095;</span>
+          </button>
+          <div class="dropdown-content1">
+            <a id="milk" href="#home">Milk</a>
+            <a id="yogurt" href="#about">Yogurt & Shikhand</a>
+            <a id="choco" href="#contact">Chocolates</a>
+            <a id="noodles" href="#home">Cup Noodles</a>
+            <a id="hair" href="#about">Hair Care</a>
+            <a id="chicken" href="#contact">Fresh Chicken</a>
+            <a id="eggs" href="#home">Eggs</a>
+            <a id="honey" href="#about">Honey</a>
+          </div>
+        </div>
+
+        <div id="offers">
+          <img
+            src="https://img.icons8.com/metro/26/undefined/percentage2--v2.png"
+          />
+          <p>&nbsp; Offers</p>
+        </div>
+        <div id="offers">
+          <img
+            src="https://img.icons8.com/metro/26/undefined/percentage2--v2.png"
+          />
+          <p>&nbsp;Offers</p>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------- Main body content ------------------------>
+
     <div id="crauser1">
       <img
         src="https://www.bigbasket.com/media/uploads/banner_images/hp_b_h_m_fnv_season-special_460-250522.jpg"
@@ -107,7 +225,10 @@
     </div>
 
     <div id="bestsellers">
-      <h2>Best Sellers</h2>
+      <h2>
+        Best Sellers
+        <button>Show More</button>
+      </h2>
       <hr />
       <div id="bestsellersSlide">
         <button>&raquo;</button>
@@ -590,6 +711,175 @@
       </p>
       <button>Read More...</button>
     </div>
+
+    <!---------------------------- Footer ---------------------------->
+
+    <footer>
+      <div class="f1">
+        <div class="f-flex1">
+          <h3>Big-basket</h3>
+          <p>About Us</p>
+          <p>In News</p>
+          <p>Green bigbasket</p>
+          <p>Privacy Policy</p>
+          <p>Affiliate</p>
+          <p>Terms and Conditins</p>
+          <p>bb Daily</p>
+        </div>
+        <div class="f-flex1">
+          <h3>Help</h3>
+          <p>FAQs</p>
+          <p>Contact Us</p>
+          <p>bb Wallet FAQs</p>
+          <p>bb Wallet T&Qs</p>
+          <p>Vendor Connect</p>
+        </div>
+        <div class="f-flex1">
+          <img
+            src="https://github.com/rajashekharms369/Project_Big-Basket/blob/homepage/footerbblogo.JPG?raw=true"
+            alt=""
+          />
+          <div class="store">
+            <img src="https://i.postimg.cc/rsmBsSV1/app-store.jpg" alt="" />
+            <img src="https://i.postimg.cc/zvw30YZD/g-play.jpg" alt="" />
+          </div>
+          <div class="socialacc">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/undefined/facebook-new.png"
+            />
+
+            <img
+              src="https://img.icons8.com/ios-filled/30/undefined/instagram-new--v1.png"
+            />
+
+            <img
+              src="https://img.icons8.com/fluency-systems-regular/30/undefined/twitter.png"
+            />
+
+            <img
+              src="https://img.icons8.com/ios-filled/30/undefined/pinterest--v1.png"
+            />
+          </div>
+          <h4>Vendor Connect</h4>
+          <p>Become a Seller</p>
+        </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="cities">
+        <h4>Cities We Serve</h4>
+        <br />
+        <p>
+          Modasa | Puri | Paschim Bardhaman | Shambhu | Sikar | Howrah |
+          Badnagar | Deesa | Sircilla District | Pratapgarh District | Prakasam
+          District | Muzaffarnagar District | Meerut District | Ludhiana
+          District | Hooghly District | Gonda District | Fatehgarh Sahib
+          District | Baghpat District | Amroha District | Amravati | Korba |
+          Kolhapur | Kalaburagi | Guwahati | Bhubaneshwar-Cuttack | Bhiwadi |
+          Faridabad | Bahadurgarh | Raichur | Sindudurg | Sangareddy | Khammam |
+          Jadcherla | Sambhal District | Siddipet District | Tiruppur |
+          Visakhapatnam District | Puducherry | Tumakuru | Udham-Singh-Nagar |
+          Nellore | Ambala | Agra | Rajkot | Madurai | Nadia | Bardoli | Saran |
+          Thrissur | Chittor District | Raipur | North 24 Parganas | Khambhat |
+          Hubli | Prakasam | Nalgonda | Karnal | Panipat | Rohtak | Renigunta |
+          Patiala | Trichy | Yanam District | Chandigarh Tricity | Surat |
+          Mysore | Vadodara | Navsari | Hyderabad | Kolkata | Chennai | Patan |
+          Siddhpur | Mumbai | Nashik | Kalol | Kadi | Himatnagar | Mehsana |
+          Raipur | Chandur Bazar | Haryana | Allahabad | Jodhpur | Morshi |
+          Palwal | Kalinga Nagar | PEDDAPALLI | Mahabubnagar | Jamshedpur |
+          Vijayawada-Guntur | Dholka | Kheda | Pilakhua District | Udaipura |
+          Gadarwara | Jaora | Nagda | Ratlam | Nadiad | Palanpur | Bhopal |
+          Jaipur | Ahmedabad-Gandhinagar | Noida-Ghaziabad | Meerut |
+          Vizianagaram | Medak District | East Godavari District | Nizamabad
+          District | Kamareddy District | Lucknow Rural | Noida Rural | Chennai
+          Rural | Vizag Rural | Nagpur | Kochi | Madanapalli | Sonipat | Kundli
+          | Visnagar | Itarsi | Khordha | Dewas | kolar | Tirupati | Patna |
+          Mandideep | Pipariya | Daman | Kurnool | Silvassa | Suryapet District
+          | Hosur | Eluru | Ghaziabad | Muzzafarpur | Delhi | Gurgaon |
+          Bangalore | Chikkaballapura District | Srikakulam Disctrict |
+          Vizianagaram Disctrict | Ranchi | Modinagar District | Coimbatore |
+          Gautam Buddha Nagar District | Anantapur District | South 24 Parganas
+          District | Siwan | Unjha | Ujjain | Vikarabad | Churu | Bhadradri
+          Kothagudem District | Dahegam | Agra | Cuttack | Jangaon | Sitapur |
+          Jagatsinghpur | Dhone | Halflong | Parwanoo | Jajpur | Krishna
+          District | Ashta | West-Godavari | Guntur-Rural | Kota | Barabanki
+          District | Jalandhar | Indore | Mhow | Visakhapatnam | Ludhiana |
+          Hapur | Bulandshahr | East-Godavari-2 | Chittoor District | Tiruvallur
+          District | Bidar District | Sangareddy District | Ayodhya District |
+          Pune | Hoshangabad | Borsad | Petlad | Valsad | Miryalaguda |
+          Kalwakurthy | Bhojpur | Hajipur | Kadapa | Jhunjhunu | West Godavari
+          District | Bhadrak | Gurugram Rural | Indore Rural | Guwahati Rural |
+          Bhopal Rural | Hyderabad Rural | Coimbatore Rural | Bhubaneswar Rural
+          | Bangalore Rural | Kolkata Rural | Kochi Rural | Sultanpur District |
+          Kanpur | Lucknow | Anand | Rajkot | Warud | Sathupally | Wyra |
+          Amaravathi | Akola | Katol | Lunawada | Godhra | Karimnagar | Nagpur
+          Rural | Patna Rural | Mumbai Rural | Mysore Rural | Vadodara Rural |
+          Jaipur Rural | Pune Rural | Surat Rural | Kalluru | Aligarh District |
+          Amethi District | Raebareli District | Jammu Kashmir | Katihar |
+          Kalmeshwar | Kottayam | Rajamahendravaram | Kakinada | Palakkad |
+          Sahibganj | Salcete | DehraDun | Saharanpur District | Aligarh
+        </p>
+      </div>
+      <div class="line"></div>
+
+      <div class="f-grid">
+        <h4 class="pc">Popular Categories</h4>
+        <h4 class="pb">Popular Brands</h4>
+        <div class="f-subgrid">
+          <div class="f-sg-flex">
+            <p>Fruits & Vegetables</p>
+            <p>OTC</p>
+            <p>Chocolates & Sweets</p>
+            <p>Bakery, Cakes & Dairy</p>
+            <p>Sunflower Oils</p>
+          </div>
+          <div class="f-sg-flex">
+            <p>Basmati Rice</p>
+            <p>Cheese</p>
+            <p>Soft Drinks</p>
+            <p>Olive Oils</p>
+            <p>Liquid soaps and bars</p>
+          </div>
+          <div class="f-sg-flex">
+            <p>Green Tea</p>
+            <p>Dry Fruits</p>
+            <p>Energy Drinks</p>
+            <p>Foodgrains, Oil</p>
+          </div>
+        </div>
+        <div class="f-subgrid">
+          <div class="f-sg-flex">
+            <p>Amul</p>
+            <p>Kellogs</p>
+            <p>Bru</p>
+            <p>Britannia</p>
+            <p>Horlicks</p>
+          </div>
+          <div class="f-sg-flex">
+            <p>Haldirams</p>
+            <p>Dettol</p>
+            <p>McCain</p>
+            <p>Nescafe</p>
+            <p>Galaxy</p>
+          </div>
+          <div class="f-sg-flex">
+            <p>Tropicana</p>
+            <p>MTR</p>
+            <p>Ariel</p>
+            <p>Colgate</p>
+            <p>Complan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        Copyright 2021-2023 SuperMarket Grocery Supplies Pvt Ltd
+      </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      &#10095;
+    </button>
   </body>
 </html>
 
