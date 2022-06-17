@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="https://www.bbassets.com/static/v2557/images/favicon.ico?v=2557"
+        type="image/x-icon">
     <link rel="icon" href="https://mir-s3-cdn-cf.behance.net/projects/404/1bee8e117159767.6070440e716cd.png">
     <title>Big-Basket</title>
 </head>
@@ -14,7 +16,7 @@
         <div class="nav-flex">
             <img src="logo.png" alt="">
             
-            <div id="input"><i class="fa fa-search"></i> &nbsp;<input type="text" placeholder="  Search for Products..."></div>
+            <div id="input"><i class="fa fa-search"></i> &nbsp;<input class="fa fa-search" type="search" placeholder="  Search for Products..."></div>
 
             <div id="address"><img src="https://img.icons8.com/external-glyph-zulfa-mahendra/48/undefined/external-delivery-food-delivery-2-glyph-zulfa-mahendra.png"/> <p>Get in 6 hrs, </p>&nbsp; <p>Home: Sector-47, Gurgaon</p></div>
 
@@ -25,12 +27,48 @@
 
 
         <div class="nav-flex">
-            <div id="category"><p>Shop by Category &nbsp; <span id="downarrow">&#9660;</span></p></div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><p>Shop by Category &nbsp; <span id="downarrow">&#9660;</span></p></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#home">Fruits & Vegetables</a>
+                  <a href="#about">Foodgrains,Oil & Masala</a>
+                  <a href="#contact">Bakery, Cakes & Dairy</a>
+                  <a href="#home">Beverages</a>
+                  <a href="#about">Snacks & Branded Foods</a>
+                  <a href="#contact">Beauty & Hygiene</a>
+                  <a href="#home">Cleaning & Household</a>
+                  <a href="#about">Kitchen, Garden & Pets</a>
+                  <a href="#contact">Eggs, Meat & Fish</a>
+                  <a href="#home">Gourmet & World Food</a>
+                  <a href="#about">Baby Care</a>
+                </div>
+            </div>
+
+
             <div id="efv"><p>Exotic Fruite & Vegetables</p></div>
             <div id="tea"><p>Tea</p></div>
             <div id="ghee"><p>Ghee</p></div>
             <div id="nandhini"><p>Nandhini</p></div>
-            <div id="Freshvegetables"><p>Fresh Vegetables &nbsp; <span id="drop-down">&#10095;&#10095;</span> </p></div>
+
+
+
+            <div id="Freshvegetables" class="dropdown1">
+                <button class="dropbtn1">Fresh vegetables <span id="drop-down">&#10095;&#10095;</span></button>
+                <div class="dropdown-content1">
+                    <a href="#home">Milk</a>
+                    <a href="#about">Yogurt & Shikhand</a>
+                    <a href="#contact">Chocolates</a>
+                    <a href="#home">Cup Noodles</a>
+                    <a href="#about">Hair Care</a>
+                    <a href="#contact">Fresh Chicken</a>
+                    <a href="#home">Eggs</a>
+                    <a href="#about">Honey</a>
+                </div>
+            </div>
+
+            
+
+
             <div id="offers"><img src="https://img.icons8.com/metro/26/undefined/percentage2--v2.png"/><p>&nbsp;  Offers</p></div>
             <div id="offers"><img src="https://img.icons8.com/metro/26/undefined/percentage2--v2.png"/><p> &nbsp;Offers</p></div>
         </div>
@@ -635,14 +673,10 @@
         <div class="copyright">
             Copyright 2021-2023 SuperMarket Grocery Supplies Pvt Ltd
         </div>
-
-
-
-
     </footer>
-    
-    <script>
 
-    </script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#10095;</button>
+    
+<script src="/index.js"></script>
 </body>
 </html>

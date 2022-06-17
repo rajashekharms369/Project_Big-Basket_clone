@@ -9,6 +9,7 @@
     grid-template-rows: auto auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     margin: 5px 0% 0% 0%;
+    margin-bottom: 60%;
 }
 .nav-flex{
     display: flex;
@@ -26,14 +27,14 @@ p{
     margin: 0px 10px 0px 5px;
 }
 .nav-flex:nth-child(2){
-    margin: 0% 16% 1% 16%;
+    margin: 0% 14% 1% 14%;
 }
 .nav-flex>img{
     width: 110px;
     height: 50px;
 }
 #input{
-    padding: 13px 10px 6px 10px;
+    padding: 10px 10px 9px 10px;
     border: 1px solid black;
     height: 20px;
     border-radius: 4px;
@@ -41,11 +42,17 @@ p{
     width: 500px;
 }
 #input input{
-    width: 350px;
-    height: 20px;
+    width: 85%;
+    height: 35px;
+    margin-top: -3%;
+    outline: none;
     border: none;
-    margin: auto;
-    margin-top: 0px;
+
+}
+#input input:focus{
+    border: none;
+    outline: none;
+
 }
 #address{
     display: flex;
@@ -55,6 +62,7 @@ p{
     padding: 1px 10px 1px 10px;
     margin-top: 5px;
 }
+
 #address:hover{
     display: flex;
     flex-direction: row;
@@ -90,13 +98,19 @@ p{
 }
 #cart-logo{
     background-color: rgb(251, 215, 215);
-    padding: 5px 12px 5px 12px;
+    box-sizing: border-box;
+    padding: 10px 12px 3px 12px;
+
     margin-top: 5px;
     border-radius: 5px;
+
+
+
+
 }
 #cart-logo:hover{
     background-color: rgb(247, 207, 207);
-    padding: 5px 12px 5px 12px;
+    padding: 10px 12px 3px 12px;
     margin-top: 5px;
     border-radius: 5px;
 }
@@ -115,9 +129,7 @@ p{
 #category:hover{
     background-color: rgb(89, 137, 5);
 }
-#downarrow{
-    font-size: small;
-}
+
 #category p{
     margin: auto auto auto auto;
 }
@@ -428,4 +440,148 @@ footer{
     font-size: 14px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: auto;
+    
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(60, 176, 56);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    box-shadow: rgba(52, 145, 50, 0.25) 0px 30px 60px -12px inset, rgba(29, 173, 65, 0.3) 0px 18px 36px -18px inset;
+    transition: 0.2s;
+    -webkit-transform: rotate(270deg);
+    
+}
+
+#myBtn:hover {
+    background-color: rgb(27, 148, 82);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+
+.dropbtn {
+    background-color: rgb(95,149,0);
+    color: white;
+    padding: 10px;
+    
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    
+  }
+  /* .dropbtn {
+    translate: ;
+    transition: 1s;
+  } */
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(113, 174, 7);
+    border: none;
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: -0.75%;
+    
+  }
+  
+  .dropdown-content {
+    margin-top: 2px;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: #322f2f;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    line-height:9px;
+    
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 130px;
+    margin: 5px;
+    border-radius: 5px;
+    
+  }
+  
+  .dropdown a:hover {background-color: rgb(137, 133, 133);
+    border: none;
+    
+}
+
+
+  
+  .show {display: block;}
+  a{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    
+  }
+
+  .dropbtn1 {
+    background: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border: none;
+    
+  }
+  .dropbtn1:hover{
+    color: red;
+    
+  }
+  
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    line-height: 5px;
+    margin-top: 10%;
+    left: 70%;
+    border-radius: 5px;
+    
+  }
+  
+  .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  .dropdown-content1 a:hover {background-color: #ddd;}
+  
+  .dropdown1:hover .dropdown-content1 {display: block;
+    
+}
+  
+  .dropdown1:hover .dropbtn1 {background-color: #ffffff;
 }
