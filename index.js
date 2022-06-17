@@ -17,7 +17,6 @@ document.documentElement.scrollTop = 0;
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
-
   }
 
 
@@ -35,5 +34,20 @@ window.onclick = function(event) {
   }
 }
 
+
+
+document.getElementById('user-logo').addEventListener('click',toggle)
+
+        function toggle() {
+            var blur=document.getElementById('blur2');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup2');
+            popup.classList.toggle('active');
+        }
+
+
+        document.querySelector('#logo').addEventListener('click',function(){
+            location.reload()
+        })
 
 // setInterval(function(){alert("Hello")},3000);
