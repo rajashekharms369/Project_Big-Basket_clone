@@ -1,290 +1,1667 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
-.navbar{
-    display: grid;
-    grid-template-rows: auto auto;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    margin: 5px 0% 0% 0%;
-}
-.nav-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-}
-p{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.nav-flex:nth-child(1){
-    margin: 0% 15% 1.5% 15%;
-}
-.nav-flex:nth-child(1) *{
-    margin: 0px 10px 0px 5px;
-}
-.nav-flex:nth-child(2){
-    margin: 0% 16% 1% 16%;
-}
-.nav-flex>img{
-    width: 110px;
-    height: 50px;
-}
-#input{
-    padding: 13px 10px 6px 10px;
-    border: 1px solid black;
-    height: 20px;
-    border-radius: 4px;
-    margin-top: 4px;
-    width: 500px;
-}
-#input input{
-    width: 350px;
-    height: 20px;
-    border: none;
-    margin: auto;
-    margin-top: 0px;
-}
-#address{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(241, 239, 239);
-    border-radius: 5px;
-    padding: 1px 10px 1px 10px;
-    margin-top: 5px;
-}
-#address:hover{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(233, 229, 229);
-    border-radius: 5px;
-    padding: 1px 10px 1px 10px;
-    margin-top: 5px;
-}
-#address>img{
-    width: 25px;
-    height: 25px;
-    margin: auto;
-    margin-right: 10px;
-}
-#address p{
-    margin: auto;
-    font-size: 12px;
-}
-#user-logo{
-    background-color: rgb(241, 239, 239);
-    padding: 5px 12px 5px 12px;
-    margin-top: 5px;
-    border-radius: 5px;
-}
-#user-logo:hover{
-    background-color: rgb(227, 224, 224);
-    padding: 5px 12px 5px 12px;
-    margin-top: 5px;
-    border-radius: 5px;
-}
-#user-logo img{
-    margin: auto;
-}
-#cart-logo{
-    background-color: rgb(251, 215, 215);
-    padding: 5px 12px 5px 12px;
-    margin-top: 5px;
-    border-radius: 5px;
-}
-#cart-logo:hover{
-    background-color: rgb(247, 207, 207);
-    padding: 5px 12px 5px 12px;
-    margin-top: 5px;
-    border-radius: 5px;
-}
-#cart-logo img{
-    margin: auto;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-#category{
-    background-color: rgb(94,149,1);
-    color: white;
-    padding: 10px;
-    margin-top: -9px;
-    border-radius: 6px;
-    margin-left: -25px;
+/*-------------------Main body CSS---------------------*/
+
+h2 {
+  margin-top: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-#category:hover{
-    background-color: rgb(89, 137, 5);
+
+/*------------Crauser1----------*/
+#crauser1 > img {
+  width: 100%;
+  cursor: pointer;
 }
-#downarrow{
-    font-size: small;
+
+#crauser {
+  position: relative;
 }
-#category p{
-    margin: auto auto auto auto;
+
+#crauser1Options {
+  /* border: 1px solid black; */
+  display: flex;
+  border: 1px solid hidden;
+  width: 65%;
+  margin: -4.5% auto auto auto;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-#offers{
-    display: flex;
-    background-color: rgb(241, 239, 239);
-    padding: 2px 5px 2px 5px;
-    border-radius: 10px;
-    height: 20px;
-    cursor: pointer;
+
+#crauser1Options > h5 {
+  border: 1px solid white;
+  font-size: 16px;
+  color: #555555;
+  width: 20%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  padding: 10px 13px;
+  margin: auto;
 }
-#offers:hover{
-    display: flex;
-    background-color: rgb(238, 233, 233);
-    padding: 2px 5px 2px 5px;
-    border-radius: 10px;
-    height: 20px;
-    cursor: pointer;
+
+#crauser1Options > h5:hover {
+  cursor: pointer;
 }
-#offers>img{
+
+#crauser1Options > h5 > span {
+  color: #adadad;
+  font-size: 14px;
+}
+
+#crauser1 > button {
+  position: absolute;
+  display: none;
+  top: 30%;
+  font-size: 20px;
+  width: 20px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid rgba(185, 185, 185, 0.5);
+}
+
+#crauser1 > button:nth-child(3) {
+  left: 10px;
+}
+
+#crauser1 > button:nth-child(4) {
+  right: 10px;
+}
+
+/*-------------Options1---------------*/
+#options1 {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#options1 > div > img {
+  width: 100%;
+  cursor: pointer;
+}
+
+/*-------------Crauser2----------------*/
+#crauser2 {
+  /* border: 1px solid black; */
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+#crauser2 > img {
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#crauser2 > button {
+  position: absolute;
+  top: 50%;
+  font-size: 25px;
+  width: 30px;
+  height: 35px;
+  background-color: white;
+  border: 1px solid rgba(185, 185, 185, 0.5);
+}
+
+#crauser2 > button:hover {
+  cursor: pointer;
+}
+
+#crauser2 > button:nth-child(2) {
+  right: -15px;
+}
+
+#crauser2 > button:nth-child(3) {
+  left: -15px;
+}
+
+/*---------------BankOffer--------------*/
+#bankoffer {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+
+#bankoffer > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 15px;
+}
+
+#bankoffer > div > div > img {
+  width: 100%;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#bankoffer > div > div > img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#bankoffer > h2 {
+  color: #444444;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+#bankoffer > h2 + hr {
+  border: 0.5px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+/*-------------Best Sellers----------*/
+#bestsellers {
+  width: 95%;
+  /* border: 1px solid black; */
+  margin: auto;
+  position: relative;
+}
+
+#bestsellers > div > div {
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 0px 8px;
+}
+
+#bestsellers > div > div > P:nth-child(2) {
+  margin: 8px 0px 0px 0px;
+  color: gray;
+}
+
+#bestsellers > div > div > h3 {
+  margin-bottom: 6px;
+  font-size: 17px;
+}
+
+#bestsellers > div > div > select {
+  width: 100%;
+  background-color: white;
+  border: 1px solid gray;
+  height: 22px;
+}
+
+#bestsellers > div > div > div {
+  width: 94%;
+  background-color: #f4f3f2;
+  padding: 6px;
+  font-size: 13px;
+  color: black;
+}
+
+#bestsellers > div > div > div > input {
+  height: 20px;
+  width: 50px;
+}
+
+#bestsellers > div > div > div > button {
+  box-sizing: border-box;
+  height: 25px;
+  margin: 8px 0px;
+  background-color: #fade7a;
+  border: hidden;
+  margin-left: 8px;
+  padding: 0px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#bestsellers > div > div > div > span:nth-child(5) {
+  width: 20px;
+  height: 100px;
+  font-size: 15px;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid gray;
+  padding: 3px;
+  margin-left: 10px;
+}
+
+#bestsellers > div > div > img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  cursor: pointer;
+}
+
+#bestsellers > div > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#bestsellers > div > button {
+  width: 30px;
+  height: 40px;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  background-color: white;
+  border: 1px solid rgba(185, 185, 185, 0.5);
+}
+
+#bestsellers > div > button:hover {
+  cursor: pointer;
+}
+
+#bestsellers > div > button:nth-child(1) {
+  right: -10px;
+}
+
+#bestsellers > div > button:nth-child(2) {
+  left: -20px;
+}
+
+#bestsellersSlide {
+  overflow: hidden;
+}
+
+#bestsellers > div {
+  display: grid;
+  grid-template-columns: repeat(10, 19.5%);
+  grid-template-rows: repeat(1, 440px);
+  gap: 5px;
+}
+
+#bestsellers > h2 {
+  color: rgb(51, 50, 50);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  position: relative;
+}
+
+#bestsellers > h2 > button {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 5px;
+  right: 5px;
+  width: 90px;
+  background-color: #84c225;
+  color: #f6fbef;
+  border-radius: 5px;
+  border: none;
+}
+
+#bestsellers > h2 + hr {
+  border: 0.5px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+/*-------------Most Popular------------*/
+#mostpopular {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+
+#mostpopular > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 15px;
+}
+
+#mostpopular > div > div > img {
+  width: 100%;
+  border: 1px solid rgb(187, 185, 185);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#mostpopular > div > div > img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#mostpopular > h2 {
+  color: rgb(51, 50, 50);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+#mostpopular > h2 + hr {
+  border: 0.5px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+/*-------------Top Offers---------------*/
+#topoffers {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+
+#topoffers > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 15px;
+}
+
+#topoffers > div > div > img {
+  width: 100%;
+  border: 1px solid rgb(187, 185, 185);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#topoffers > div > div > img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#topoffers > h2 {
+  color: rgb(51, 50, 50);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+/*----------------Fruits & Vegetables--------------*/
+#fruitvegetables {
+  /* border: 1px solid black; */
+  width: 90%;
+  margin: auto;
+}
+
+#fruitvegetables > h2 {
+  color: rgb(51, 50, 50);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+#fruitvegetables > div {
+  display: grid;
+  grid-template-columns: 50% repeat(2, 1fr);
+  grid-template-rows: repeat(auto);
+  grid-template-areas:
+    "fir sec thr"
+    "fir fou fif";
+  gap: 10px;
+}
+
+#fruitvegetables > div > div:nth-child(1) {
+  grid-area: fir;
+}
+
+#fruitvegetables > div > div:nth-child(2) {
+  grid-area: sec;
+}
+
+#fruitvegetables > div > div:nth-child(3) {
+  grid-area: thr;
+}
+
+#fruitvegetables > div > div:nth-child(4) {
+  grid-area: fou;
+}
+
+#fruitvegetables > div > div:nth-child(5) {
+  grid-area: fif;
+}
+
+#fruitvegetables > div > div > img {
+  width: 100%;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#fruitvegetables > h2 + hr {
+  border: 0.5px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+/*-------------Your Daily Staples------------*/
+#yourdailystaples {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+
+#yourdailystaples > h2 {
+  color: rgb(51, 50, 50);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+#yourdailystaples > div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 10px;
+}
+
+#yourdailystaples > div > div > img {
+  width: 100%;
+  border: 1px solid rgb(194, 191, 191);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#yourdailystaples > div > div > img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*-------------------beverages-----------------*/
+#beverages {
+  /* border: 1px solid black; */
+  width: 90%;
+  margin: auto;
+}
+
+#beverages > h2 {
+  color: rgb(51, 50, 50);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+#beverages > div {
+  display: grid;
+  grid-template-columns: 50% repeat(2, 1fr);
+  grid-template-rows: repeat(auto);
+  grid-template-areas:
+    "fir sec thr"
+    "fir fou fif";
+  gap: 10px;
+}
+
+#beverages > div > div:nth-child(1) {
+  grid-area: fir;
+}
+
+#beverages > div > div:nth-child(2) {
+  grid-area: sec;
+}
+
+#beverages > div > div:nth-child(3) {
+  grid-area: thr;
+}
+
+#beverages > div > div:nth-child(4) {
+  grid-area: fou;
+}
+
+#beverages > div > div:nth-child(5) {
+  grid-area: fif;
+}
+
+#beverages > div > div > img {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid rgb(196, 193, 193);
+  cursor: pointer;
+}
+
+/*----------------Snacks Store----------------*/
+#snacksstore {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+
+#snacksstore > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 15px;
+}
+
+#snacksstore > div > div > img {
+  width: 100%;
+  border: 1px solid rgb(187, 185, 185);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#snacksstore > div > div > img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#snacksstore > h2 {
+  color: rgb(51, 50, 50);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+#snacksstore > h2 + hr {
+  border: 0.5px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+/*---------------Cleaning & Household-----------------*/
+
+#cleaninghousehold {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+
+#cleaninghousehold > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 15px;
+}
+
+#cleaninghousehold > div > div > img {
+  width: 100%;
+  border: 1px solid rgb(187, 185, 185);
+  border-radius: 15px;
+}
+
+#cleaninghousehold > div > div > img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+#cleaninghousehold > h2 {
+  color: rgb(51, 50, 50);
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+/*------------------Beauty and Hygiene------------------*/
+#beautyandhygiene {
+  /* border: 1px solid black; */
+  width: 90%;
+  margin: auto;
+}
+
+#beautyandhygiene > h2 {
+  color: rgb(51, 50, 50);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+#beautyandhygiene > div {
+  display: grid;
+  grid-template-columns: 50% repeat(2, 1fr);
+  grid-template-rows: repeat(auto);
+  grid-template-areas:
+    "fir sec thr"
+    "fir fou fif";
+  gap: 10px;
+}
+
+#beautyandhygiene > div > div:nth-child(1) {
+  grid-area: fir;
+}
+
+#beautyandhygiene > div > div:nth-child(2) {
+  grid-area: sec;
+}
+
+#beautyandhygiene > div > div:nth-child(3) {
+  grid-area: thr;
+}
+
+#beautyandhygiene > div > div:nth-child(4) {
+  grid-area: fou;
+}
+
+#beautyandhygiene > div > div:nth-child(5) {
+  grid-area: fif;
+}
+
+#beautyandhygiene > div > div > img {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid rgb(190, 190, 190);
+  cursor: pointer;
+}
+
+#beautyandhygiene > h2 + hr {
+  border: 0.5px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+/*----------------Home and Kitchen--------------*/
+#homeandkitchen {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+
+#homeandkitchen > h2 {
+  color: rgb(51, 50, 50);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+#homeandkitchen > div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 10px;
+}
+
+#homeandkitchen > div > div > img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#homeandkitchen > div > div > img {
+  width: 100%;
+  border: 1px solid rgb(194, 191, 191);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#homeandkitchen > h2 + hr {
+  border: 0.5px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+/*--------------crauser3---------------*/
+#crauser3 {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#crauser3 > img {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid rgb(212, 212, 212);
+  cursor: pointer;
+}
+
+#crauser3 > button {
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  height: 30px;
+  font-size: 20px;
+  border: 1px solid rgb(187, 187, 187);
+  background-color: white;
+}
+
+#crauser3 > button:hover {
+  cursor: pointer;
+}
+
+#crauser3 > button:nth-child(2) {
+  right: -10px;
+}
+
+#crauser3 > button:nth-child(3) {
+  left: -10px;
+}
+
+/*----------------Brand Store------------------*/
+#brandstore {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+
+#brandstore > h2 {
+  color: rgb(51, 50, 50);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+#brandstore > div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 10px;
+}
+
+#brandstore > div > div > img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#brandstore > div > div > img {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid rgb(194, 191, 191);
+  cursor: pointer;
+}
+
+#brandstore > h2 + hr {
+  border: 0.5px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+/*-------------Featured Recipes---------------*/
+#featuredrecipes {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid rgb(212, 212, 212); */
+}
+
+#featuredrecipes > h2 {
+  color: rgb(51, 50, 50);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+#featuredrecipes > img {
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#featuredrecipes > button {
+  position: absolute;
+  top: 55%;
+  width: 25px;
+  height: 30px;
+  font-size: 20px;
+  border: 1px solid rgb(187, 187, 187);
+  background-color: white;
+}
+
+#featuredrecipes > button:hover {
+  cursor: pointer;
+}
+
+#featuredrecipes > img + button {
+  right: -10px;
+}
+
+#featuredrecipes > img + button + button {
+  left: -10px;
+}
+
+#featuredrecipes > h2 + hr {
+  border: 0.5px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+/*---------------information--------------*/
+#information {
+  width: 91%;
+  margin: 20px auto;
+  border: 1px solid #dfdada;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+
+#information a {
+  color: #6ad040;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#information p {
+  color: #999797;
+  margin-top: 10px;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+#information p:nth-child(10) {
+  margin-bottom: 20px;
+}
+
+#information > h2 {
+  margin-top: 20px;
+  color: #333333;
+  font-weight: lighter;
+  font-size: 32px;
+}
+
+#information li {
+  color: #5d5d5d;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+#information > ul {
+  margin-top: 15px;
+  margin-left: 45px;
+}
+
+#information > button {
+  margin: 20px 0px;
+  padding: 5px;
+}
+
+/*------------Media Queries for medium screen-------------*/
+@media all and (min-width: 480px) and (max-width: 720px) {
+  h2 {
+    margin-top: 10px;
+  }
+
+  /*------------Crauser1----------*/
+
+  #crauser1 > img {
+    width: 100%;
+  }
+
+  #crauser1Options {
+    display: none;
+  }
+
+  /*-------------Options1---------------*/
+  #options1 {
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /*-------------Crauser2----------------*/
+  #crauser2 {
+    width: 80%;
+    margin: auto;
+  }
+
+  #crauser2 > button {
+    top: 40%;
+    font-size: 15px;
     width: 15px;
-    height: 15px;
+    height: 20px;
+  }
+
+  #crauser2 > button:nth-child(2) {
+    right: -10px;
+  }
+
+  #crauser2 > button:nth-child(3) {
+    left: -10px;
+  }
+
+  /*---------------BankOffer--------------*/
+  #bankoffer {
+    width: 80%;
+  }
+
+  #bankoffer > div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+  }
+
+  #bankoffer > h2 {
+    margin-bottom: 5px;
+  }
+
+  #bankoffer > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*-------------Best Sellers----------*/
+  #bestsellers {
+    width: 95%;
+  }
+
+  #bestsellers > div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+  }
+
+  #bestsellers > div > button {
+    width: 25px;
+    font-size: 15px;
+    top: 51%;
+  }
+
+  #bestsellers > div > button:nth-child(1) {
+    right: -5px;
+  }
+
+  #bestsellers > div > button:nth-child(2) {
+    left: -5px;
+  }
+
+  #bestsellers > h2 {
+    margin-bottom: 8px;
+  }
+
+  #bestsellers > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*-------------Most Popular------------*/
+  #mostpopular {
+    width: 80%;
+  }
+
+  #mostpopular > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+  }
+
+  #mostpopular > h2 {
+    margin-bottom: 5px;
+  }
+
+  #mostpopular > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*-------------Top Offers---------------*/
+  #topoffers {
+    width: 80%;
+  }
+
+  #topoffers > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+  }
+
+  #topoffers > h2 {
+    margin-bottom: 5px;
+  }
+
+  /*----------------Fruits & Vegetables--------------*/
+  #fruitvegetables {
+    width: 80%;
+  }
+
+  #fruitvegetables > h2 {
+    margin-bottom: 5px;
+  }
+
+  #fruitvegetables > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    grid-template-areas:
+      "fir fir"
+      "sec thr"
+      "fou fif";
+    gap: 5px;
+  }
+
+  #fruitvegetables > div > div:nth-child(4) {
+    display: none;
+  }
+
+  #fruitvegetables > div > div:nth-child(5) {
+    display: none;
+  }
+
+  #fruitvegetables > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*-------------Your Daily Staples------------*/
+  #yourdailystaples {
+    width: 80%;
+  }
+
+  #yourdailystaples > h2 {
+    margin-bottom: 5px;
+  }
+
+  #yourdailystaples > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 5px;
+  }
+
+  /*-------------------beverages-----------------*/
+  #beverages {
+    width: 80%;
+  }
+
+  #beverages > h2 {
+    margin-bottom: 5px;
+  }
+
+  #beverages > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    grid-template-areas:
+      "fir fir"
+      "sec thr";
+    gap: 10px;
+  }
+
+  #beverages > div > div:nth-child(4) {
+    display: none;
+  }
+
+  #beverages > div > div:nth-child(5) {
+    display: none;
+  }
+
+  /*----------------Snacks Store----------------*/
+  #snacksstore {
+    width: 80%;
+  }
+
+  #snacksstore > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+  }
+
+  #snacksstore > h2 {
+    margin-bottom: 5px;
+  }
+
+  #snacksstore > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*---------------Cleaning & Household-----------------*/
+
+  #cleaninghousehold {
+    width: 80%;
+  }
+
+  #cleaninghousehold > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+  }
+
+  #cleaninghousehold > h2 {
+    margin-bottom: 10px;
+  }
+
+  /*------------------Beauty and Hygiene------------------*/
+  #beautyandhygiene {
+    width: 80%;
+  }
+
+  #beautyandhygiene > h2 {
+    margin-bottom: 5px;
+  }
+
+  #beautyandhygiene > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    grid-template-areas:
+      "fir fir"
+      "sec thr";
+    gap: 10px;
+  }
+
+  #beautyandhygiene > div > div:nth-child(4) {
+    display: none;
+  }
+
+  #beautyandhygiene > div > div:nth-child(5) {
+    display: none;
+  }
+
+  #beautyandhygiene > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*----------------Home and Kitchen--------------*/
+  #homeandkitchen {
+    width: 80%;
+  }
+
+  #homeandkitchen > h2 {
+    margin-bottom: 5px;
+  }
+
+  #homeandkitchen > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 5px;
+  }
+
+  #homeandkitchen > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*--------------crauser3---------------*/
+  #crauser3 {
+    width: 80%;
     margin: auto;
-}
-#drop-down{
-    font-size: small;
-    cursor: pointer;
-}
-#drop-down:hover{
-    color: red;
-}
-#efv{
-    display: inline-block;
-    position: relative;
-}
-#efv:hover{
-    color: red;
-    cursor: pointer;
-}
-#efv::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: red;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-    color: red;
-}
-#efv:hover:after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    color: red;
+    margin-top: 15px;
+  }
+
+  #crauser3 > button {
+    top: 45%;
+    width: 12px;
+    height: 16px;
+    font-size: 10px;
+  }
+
+  #crauser3 > button:nth-child(2) {
+    right: -5px;
+  }
+
+  #crauser3 > button:nth-child(3) {
+    left: -5px;
+  }
+
+  /*----------------Brand Store------------------*/
+  #brandstore {
+    width: 80%;
+  }
+
+  #brandstore > h2 {
+    margin-bottom: 5px;
+  }
+
+  #brandstore > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 5px;
+  }
+
+  #brandstore > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*-------------Featured Recipes---------------*/
+  #featuredrecipes {
+    width: 80%;
+  }
+
+  #featuredrecipes > h2 {
+    margin-bottom: 5px;
+  }
+
+  #featuredrecipes > button {
+    top: 55%;
+    width: 15px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  #featuredrecipes > img + button {
+    right: -5px;
+  }
+
+  #featuredrecipes > img + button + button {
+    left: -5px;
+  }
+
+  #featuredrecipes > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*---------------information--------------*/
+  #information {
+    width: 82%;
+    padding: 0px 10px;
+  }
+
+  #information p {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  #information > h2 {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  #information li {
+    font-size: 16px;
+  }
+
+  #information > ul {
+    margin-top: 10px;
+  }
+
+  #information > h2:nth-child(5) {
+    display: none;
+  }
+
+  #information p:nth-child(3) {
+    display: none;
+  }
+
+  #information p:nth-child(6) {
+    display: none;
+  }
+
+  #information p:nth-child(7) {
+    display: none;
+  }
+
+  #information p:nth-child(8) {
+    display: none;
+  }
+
+  #information p:nth-child(9) {
+    display: none;
+  }
+
+  #information p:nth-child(10) {
+    display: none;
+  }
 }
 
+/*------------Media Queries for Small screen-------------*/
+@media all and (min-width: 320px) and (max-width: 479px) {
+  body > h2 {
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+  }
 
-#tea{
-    display: inline-block;
-    position: relative;
-}
-#tea:hover{
-    color: red;
-    cursor: pointer;
-}
-#tea::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: red;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-    color: red;
-}
-#tea:hover:after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    color: red;
-}
+  /*------------Crauser1----------*/
 
+  #crauser1Options {
+    display: none;
+  }
 
+  /*-------------Options1---------------*/
+  #options1 {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 3px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
 
-#ghee{
-    display: inline-block;
-    position: relative;
-}
-#ghee:hover{
-    color: red;
-    cursor: pointer;
-}
-#ghee::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: red;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-    color: red;
-}
-#ghee:hover:after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    color: red;
-}
+  /*-------------Crauser2----------------*/
+  #crauser2 {
+    width: 90%;
+  }
 
+  #crauser2 > button {
+    top: 45%;
+    font-size: 9px;
+    width: 10px;
+    height: 15px;
+  }
 
+  #crauser2 > button:nth-child(2) {
+    right: -5px;
+  }
 
-#nandhini{
-    display: inline-block;
-    position: relative;
-}
-#nandhini:hover{
-    color: red;
-    cursor: pointer;
-}
-#nandhini::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: red;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-    color: red;
-}
-#nandhini:hover:after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    color: red;
-}
+  #crauser2 > button:nth-child(3) {
+    left: -5px;
+  }
 
+  /*---------------BankOffer--------------*/
+  #bankoffer {
+    width: 90%;
+  }
 
+  #bankoffer > div {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto);
+    gap: 5px;
+  }
 
-#Freshvegetables{
-    display: inline-block;
-    position: relative;
-}
-#Freshvegetables:hover{
-    color: red;
-    cursor: pointer;
-}
-#Freshvegetables::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: red;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-    color: red;
-}
-#Freshvegetables:hover:after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    color: red;
+  #bankoffer > h2 {
+    margin-bottom: 5px;
+  }
+
+  #bankoffer > h2 + hr {
+    margin-bottom: 5px;
+  }
+
+  /*-------------Best Sellers----------*/
+  #bestsellers {
+    width: 90%;
+  }
+
+  #bestsellers > div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+  }
+
+  #bestsellers > div > button {
+    width: 20px;
+    font-size: 10px;
+    top: 50%;
+  }
+
+  #bestsellers > div > button:nth-child(1) {
+    right: -5px;
+  }
+
+  #bestsellers > div > button:nth-child(2) {
+    left: -5px;
+  }
+
+  #bestsellers > h2 {
+    margin-bottom: 4px;
+  }
+
+  #bestsellers > h2 + hr {
+    margin-bottom: 4px;
+  }
+
+  /*-------------Most Popular------------*/
+  #mostpopular {
+    width: 90%;
+  }
+
+  #mostpopular > div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 5px;
+  }
+
+  #mostpopular > h2 {
+    margin-bottom: 3px;
+  }
+
+  #mostpopular > h2 + hr {
+    margin-bottom: 3px;
+  }
+
+  /*-------------Top Offers---------------*/
+  #topoffers {
+    width: 90%;
+  }
+
+  #topoffers > div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 5px;
+  }
+
+  #topoffers > h2 {
+    margin-bottom: 5px;
+  }
+
+  /*----------------Fruits & Vegetables--------------*/
+  #fruitvegetables {
+    width: 90%;
+  }
+
+  #fruitvegetables > h2 {
+    margin-bottom: 5px;
+  }
+
+  #fruitvegetables > div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto);
+    grid-template-areas: "fir";
+    gap: 5px;
+  }
+
+  #fruitvegetables > div > div:nth-child(2) {
+    display: none;
+  }
+
+  #fruitvegetables > div > div:nth-child(3) {
+    display: none;
+  }
+
+  #fruitvegetables > div > div:nth-child(4) {
+    display: none;
+  }
+
+  #fruitvegetables > div > div:nth-child(5) {
+    display: none;
+  }
+
+  #fruitvegetables > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*-------------Your Daily Staples------------*/
+  #yourdailystaples {
+    width: 90%;
+  }
+
+  #yourdailystaples > h2 {
+    margin-bottom: 5px;
+  }
+
+  #yourdailystaples > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 5px;
+  }
+
+  /*-------------------beverages-----------------*/
+  #beverages {
+    width: 90%;
+  }
+
+  #beverages > h2 {
+    margin-bottom: 5px;
+  }
+
+  #beverages > div {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto);
+    grid-template-areas:
+      "sec"
+      "thr";
+    gap: 10px;
+  }
+
+  #beverages > div > div:nth-child(1) {
+    display: none;
+  }
+
+  /*----------------Snacks Store----------------*/
+  #snacksstore {
+    width: 90%;
+  }
+
+  #snacksstore > div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+  }
+
+  #snacksstore > h2 {
+    margin-bottom: 5px;
+    margin-top: -10px;
+  }
+
+  #snacksstore > h2 + hr {
+    margin-bottom: 8px;
+  }
+
+  /*---------------Cleaning & Household-----------------*/
+
+  #cleaninghousehold {
+    width: 90%;
+  }
+
+  #cleaninghousehold > div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+  }
+
+  #cleaninghousehold > h2 {
+    margin-bottom: 10px;
+  }
+
+  /*------------------Beauty and Hygiene------------------*/
+  #beautyandhygiene {
+    width: 90%;
+  }
+
+  #beautyandhygiene > h2 {
+    margin-bottom: 5px;
+  }
+
+  #beautyandhygiene > div {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto);
+    grid-template-areas:
+      "sec"
+      "thr";
+    gap: 10px;
+  }
+
+  #beautyandhygiene > div > div:nth-child(1) {
+    display: none;
+  }
+
+  #beautyandhygiene > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*----------------Home and Kitchen--------------*/
+  #homeandkitchen {
+    width: 90%;
+  }
+
+  #homeandkitchen > h2 {
+    margin-top: -20px;
+    margin-bottom: 5px;
+  }
+
+  #homeandkitchen > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 5px;
+  }
+
+  #homeandkitchen > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*--------------crauser3---------------*/
+  #crauser3 {
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  #crauser3 > button {
+    top: 50%;
+    width: 12px;
+    height: 16px;
+    font-size: 10px;
+  }
+
+  #crauser3 > button:nth-child(2) {
+    right: -7px;
+  }
+
+  #crauser3 > button:nth-child(3) {
+    left: -7px;
+  }
+
+  /*----------------Brand Store------------------*/
+  #brandstore {
+    width: 90%;
+  }
+
+  #brandstore > h2 {
+    margin-bottom: 5px;
+  }
+
+  #brandstore > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 5px;
+  }
+
+  #brandstore > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*-------------Featured Recipes---------------*/
+  #featuredrecipes {
+    width: 90%;
+  }
+
+  #featuredrecipes > h2 {
+    margin-bottom: 5px;
+  }
+
+  #featuredrecipes > button {
+    top: 50%;
+    width: 10px;
+    height: 15px;
+    font-size: 8px;
+  }
+
+  #featuredrecipes > img + button {
+    right: -5px;
+  }
+
+  #featuredrecipes > img + button + button {
+    left: -5px;
+  }
+
+  #featuredrecipes > h2 + hr {
+    margin-bottom: 10px;
+  }
+
+  /*---------------information--------------*/
+  #information {
+    width: 91%;
+  }
+
+  #information > button {
+    display: none;
+  }
+
+  #information > h2:nth-child(5) {
+    display: none;
+  }
+
+  #information p:nth-child(3) {
+    display: none;
+  }
+
+  #information p:nth-child(6) {
+    display: none;
+  }
+
+  #information p:nth-child(7) {
+    display: none;
+  }
+
+  #information p:nth-child(8) {
+    display: none;
+  }
+
+  #information p:nth-child(9) {
+    display: none;
+  }
+
+  #information p:nth-child(10) {
+    display: none;
+  }
 }

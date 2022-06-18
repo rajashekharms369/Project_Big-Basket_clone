@@ -1,0 +1,739 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/*Navbar styling*/
+.navbar {
+  display: grid;
+  grid-template-rows: auto auto;
+  box-shadow: 0 2px 4px rgb(48 48 48 / 4%), 0 8px 16px rgb(96 96 96 / 16%);
+  margin: 5px 0% 0% 0%;
+  margin-bottom: 4%;
+  /* position: sticky;
+  top: 0px; */
+  background-color: white;
+}
+.nav-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.nav-flex:nth-child(1) {
+  margin: 0% 17% 1.5% 17%;
+}
+.nav-flex:nth-child(1) * {
+  margin: 0px 10px 0px 5px;
+}
+.nav-flex:nth-child(2) {
+  margin: 0% 14% 1% 14%;
+}
+.nav-flex > img {
+  width: 150px;
+  height: 68px;
+}
+#input {
+  padding: 10px 10px 9px 10px;
+  border: 1px solid black;
+  height: 20px;
+  border-radius: 4px;
+  margin-top: 4px;
+  width: 500px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+#input input {
+  width: 85%;
+  height: 35px;
+  margin-top: -2%;
+  outline: none;
+  border: none;
+}
+#input input:focus {
+  border: none;
+  outline: none;
+}
+#address {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(241, 239, 239);
+  border-radius: 5px;
+  padding: 0px 10px 0px 10px;
+  margin-top: 5px;
+}
+
+#address:hover {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(233, 229, 229);
+  border-radius: 5px;
+  padding: 1px 10px 1px 10px;
+  margin-top: 5px;
+}
+#address > img {
+  width: 25px;
+  height: 20px;
+  margin: auto;
+  margin-right: 10px;
+}
+#address p {
+  margin: auto;
+  font-size: 12px;
+}
+#user-logo {
+  width: fit-content;
+  margin-top: 2px;
+  margin-right: 30px;
+  border-radius: 5px;
+}
+#user-logo img {
+  width: 130%;
+  padding: 0%;
+  margin: 0%;
+}
+#user-logo:hover {
+  box-shadow: #2b5c59;
+}
+/* #user-logo img {
+} */
+#cart-logo {
+  background-color: rgb(246, 206, 206);
+  box-sizing: border-box;
+  padding: 7px 15px 0px 15px;
+
+  margin-top: 5px;
+  border-radius: 5px;
+}
+#cart-logo:hover {
+  background-color: rgb(247, 207, 207);
+  padding: 7px 15px 0px 15px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+#cart-logo img {
+  margin: auto auto auto auto;
+  padding-top: 4px;
+}
+#numitem {
+  color: white;
+  font-size: 12px;
+  background-color: red;
+  padding: 1px 5px 1px 5px;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: -15px;
+  margin-left: 19px;
+}
+#category {
+  background-color: rgb(94, 149, 1);
+  color: white;
+  padding: 10px;
+  margin-top: -9px;
+  border-radius: 6px;
+  margin-left: -25px;
+}
+#category:hover {
+  background-color: rgb(89, 137, 5);
+}
+
+#category p {
+  margin: auto auto auto auto;
+}
+#offers {
+  display: flex;
+  background-color: rgb(241, 239, 239);
+  padding: 2px 5px 2px 5px;
+  border-radius: 10px;
+  height: 20px;
+  cursor: pointer;
+}
+#offers:hover {
+  display: flex;
+  background-color: rgb(238, 233, 233);
+  padding: 2px 5px 2px 5px;
+  border-radius: 10px;
+  height: 20px;
+  cursor: pointer;
+}
+#offers > img {
+  width: 15px;
+  height: 15px;
+  margin: auto;
+}
+#drop-down {
+  font-size: small;
+  cursor: pointer;
+}
+#drop-down:hover {
+  color: red;
+}
+#efv {
+  display: inline-block;
+  position: relative;
+}
+#efv:hover {
+  color: red;
+  cursor: pointer;
+}
+#efv::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  color: red;
+}
+#efv:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: red;
+}
+
+#tea {
+  display: inline-block;
+  position: relative;
+}
+#tea:hover {
+  color: red;
+  cursor: pointer;
+}
+#tea::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  color: red;
+}
+#tea:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: red;
+}
+
+#ghee {
+  display: inline-block;
+  position: relative;
+}
+#ghee:hover {
+  color: red;
+  cursor: pointer;
+}
+#ghee::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  color: red;
+}
+#ghee:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: red;
+}
+
+#nandhini {
+  display: inline-block;
+  position: relative;
+}
+#nandhini:hover {
+  color: red;
+  cursor: pointer;
+}
+#nandhini::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  color: red;
+}
+#nandhini:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: red;
+}
+
+#Freshvegetables {
+  display: inline-block;
+  position: relative;
+}
+#Freshvegetables:hover {
+  color: red;
+  cursor: pointer;
+}
+#Freshvegetables::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  color: red;
+}
+#Freshvegetables:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: red;
+}
+
+/* Navbar styling ends here */
+
+/* Footer styling */
+footer {
+  background-color: rgb(18, 17, 17);
+}
+.f1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.f-flex1 {
+  display: flex;
+  flex-direction: column;
+}
+.f-flex1 > img {
+  width: 150px;
+}
+.f-flex1 p,
+h3 {
+  color: white;
+  line-height: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.store {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.store img:first-child {
+  width: 100px;
+  margin: auto 20px;
+  border-radius: 10px;
+}
+.store img:last-child {
+  width: 100px;
+  height: 38px;
+  border-radius: 10px;
+}
+.store img:hover {
+  box-shadow: rgba(249, 247, 247, 0.35) 0px 5px 15px;
+}
+.socialacc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.socialacc img {
+  margin-right: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+.socialacc img:hover {
+  box-shadow: rgba(249, 247, 247, 0.35) 0px 5px 15px;
+}
+.f-flex1:last-child p {
+  width: fit-content;
+  align-items: center;
+  padding: 2px 15px 2px 15px;
+  font-size: small;
+  margin: 15px 0px 10px 0px;
+  background-color: rgb(25, 24, 24);
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.f-flex1:last-child p:hover {
+  color: black;
+  background-color: rgb(250, 248, 248);
+}
+.f-flex1:last-child h4 {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 15px;
+  font-size: small;
+}
+.cities {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 160px 20px 160px;
+}
+
+.cities p {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 20px 80px 20px 60px;
+  font-size: small;
+  line-height: 28px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-bottom: 2px dotted white;
+}
+
+.f-grid {
+  margin: 1.4% 0% 0% 0%;
+  padding-bottom: 3%;
+  display: grid;
+  grid-template-columns: auto auto;
+  color: white;
+  line-height: 30px;
+  font-size: small;
+  justify-content: space-evenly;
+}
+.f-subgrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 90px;
+}
+.f-grid h4,
+p {
+  cursor: pointer;
+}
+.copyright {
+  color: white;
+  background-color: black;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: auto;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(60, 176, 56);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  box-shadow: rgba(52, 145, 50, 0.25) 0px 30px 60px -12px inset,
+    rgba(29, 173, 65, 0.3) 0px 18px 36px -18px inset;
+  transition: 0.2s;
+  -webkit-transform: rotate(270deg);
+}
+
+#myBtn:hover {
+  background-color: rgb(27, 148, 82);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.dropbtn {
+  background-color: rgb(95, 149, 0);
+  color: white;
+  padding: 10px;
+
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 9px;
+}
+/* .dropbtn {
+    translate: ;
+    transition: 1s;
+  } */
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: rgb(113, 174, 7);
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: -0.75%;
+}
+
+.dropdown-content {
+  margin-top: 2px;
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  background-color: #322f2f;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  line-height: 9px;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 130px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.dropdown a:hover {
+  background-color: rgb(137, 133, 133);
+  border: none;
+}
+
+.show {
+  display: block;
+}
+a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: small;
+}
+
+.dropbtn1 {
+  background: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  border: none;
+}
+.dropbtn1:hover {
+  color: red;
+}
+
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  line-height: 5px;
+  margin-top: 10%;
+  left: 70%;
+  border-radius: 5px;
+}
+
+.dropdown-content1 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 4px;
+}
+
+.dropdown-content1 a:hover {
+  background-color: #ddd;
+  margin: 4px;
+}
+
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+
+.dropdown1:hover .dropbtn1 {
+  background-color: #ffffff;
+}
+
+.container2 .content2 {
+  position: relative;
+  max-width: 800px;
+}
+
+.container2 .content2 img {
+  max-width: 100%;
+  display: block;
+}
+#popup2 a {
+  position: relative;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  background: rgb (134, 43, 43);
+  transition: 1s;
+  background-color: #333;
+}
+.content2 a {
+  position: relative;
+  transition: 1s;
+}
+#popup2 a:hover {
+  transition: 1s;
+  background: #2b5c59;
+}
+
+#popup2 {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  padding: 0px;
+  box-shadow: 100px 3000px 100% rgba(0, 0, 0, 0.3);
+  background: rgb(255, 255, 255);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+#popup2.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transform: 0.5s;
+}
+
+/* kap css */
+
+#main h3 {
+  text-align: center;
+  color: rgb(141, 205, 46);
+}
+#main {
+  width: 85%;
+  height: 80%;
+  margin: auto;
+  margin-top: 0px;
+  /* border: 2px solid white; */
+  padding: 6.5% 5.5% 5.5% 9.5%;
+  justify-content: center;
+  line-height: 40px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+}
+/* label{
+    font-size: larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black
+} */
+#form {
+  padding: 5%;
+}
+form > input {
+  margin: auto;
+  width: 90%;
+  height: 40px;
+  /* border: 0.5px solid rgb(168, 164, 164); */
+  margin-bottom: 6%;
+  margin-top: 4%;
+  border: none;
+  border-bottom: 0.5px solid rgb(168, 164, 164);
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  outline: none;
+  border-radius: 5px;
+}
+form > input:focus {
+  border: none;
+  outline: none;
+}
+#submit {
+  margin: auto;
+  width: 90%;
+  height: 40px;
+  margin-top: 20px;
+  color: rgb(121, 183, 30);
+  margin-bottom: 15px;
+  margin-left: 5px;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+#submit:hover {
+  color: white;
+  background-color: rgb(71, 146, 121);
+}
+#submit2 {
+  margin: auto;
+  width: 91%;
+  margin-top: 20px;
+  color: rgb(121, 183, 30);
+  margin-bottom: 5px;
+  height: 50px;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+#submit2:hover {
+  color: white;
+  background-color: rgb(71, 146, 121);
+}
+#form p {
+  text-align: center;
+  font-size: medium;
+  margin-left: -5px;
+}
+
+#cnfrm {
+  width: 24%;
+  margin: auto;
+  margin-top: 10%;
+  height: 300px;
+  background-color: white;
+  padding-left: 1.5%;
+  padding-top: 5%;
+  line-height: 40px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+}
+
+/* kap css end*/
