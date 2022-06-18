@@ -4,7 +4,7 @@ function confirm(event) {
   let otp = document.querySelector("#otp").value;
   if (otp === "123456") {
     alert("You are succesfully login");
-    window.location.href = "https://www.bigbasket.com/";
+    window.location.href = "index.html";
   } else {
     alert("Enter valid otp");
   }

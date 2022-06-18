@@ -75,7 +75,7 @@ function logindata(event) {
           "#blur2"
         ).innerHTML = `<div id="user-logo"></div>`;
         document.querySelector("#user-logo>img").src =
-          "https://img.icons8.com/ios-glyphs/50/undefined/name.png";
+          "https://i.postimg.cc/ZnH50Tfj/footer-1.jpg";
 
         document.querySelector("#user-logo>img").style.margin = "0";
 
@@ -94,7 +94,7 @@ a = JSON.parse(a);
 if (a == true) {
   document.querySelector(
     "#user-logo"
-  ).innerHTML = `<img style="margin-top:-2px;" src = "https://img.icons8.com/ios-glyphs/50/undefined/name.png"/>`;
+  ).innerHTML = `<img style="margin-top:-2px;" src = "https://i.postimg.cc/ZnH50Tfj/footer-1.jpg"/>`;
   console.log(document.querySelector("#user-logo").innerHTML);
 }
 // setInterval(function(){alert("Hello")},3000);
