@@ -388,7 +388,22 @@ p {
     color: #adadad;
     font-size: 14px;
   }
-  
+  #numitem{
+   /* margin: auto; */
+   /* padding: auto; */
+   box-sizing: border-box;
+    background-color:#d88a8a;
+    position: relative;
+    bottom:25px;
+    /* left: 15px; */
+    right: -15px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+
+  }
 .main{
     width: 80%;
     margin: auto;

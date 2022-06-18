@@ -658,17 +658,22 @@ function displaydata(product) {
   document.querySelector("#container").innerHTML = "";
   product.forEach(function (elem, index) {
     let div = document.createElement("div");
-    div.addEventListener("click", function () {
-      runfunction(elem);
-      window.location.href = "detial.html";
-      // window.location.reload();
-    });
+    // div.addEventListener("click", function () {
+    //   runfunction(elem);
+    //   window.location.href = "detial.html";
+    //   // window.location.reload();
+    // });
     let div2 = document.createElement("div");
     div2.setAttribute("class", "discount");
     div2.innerText = elem.discount;
     let img = document.createElement("img");
     img.setAttribute("src", elem.imgurl);
     img.setAttribute("class", "detail");
+    img.addEventListener("click", function () {
+      runfunction(elem);
+      window.location.href = "detial.html";
+      // window.location.reload();
+    });
     let brand = document.createElement("p");
     brand.setAttribute("class", "brand");
     brand.innerText = elem.brand;
@@ -732,10 +737,11 @@ function runfunction(elem) {
     price: elem.mrp,
   };
   detailArray.push(obj);
+
   localStorage.setItem("productdetail", JSON.stringify(detailArray));
   console.log(detailArray);
 }
-
+document.querySelector("#numitem").innerText = Array.length + 1;
 function addtocart(elem) {
   let obj = {
     image: elem.imgurl,
@@ -743,8 +749,10 @@ function addtocart(elem) {
     strike: elem.strike,
     price: elem.mrp,
   };
+
   Array.push(obj);
   console.log(Array);
+  document.querySelector("#numitem").innerText = Array.length + 1;
   localStorage.setItem("basket", JSON.stringify(Array));
 }
 
