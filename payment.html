@@ -1,104 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment Page</title>
-    <link rel="stylesheet" href="payment.css">
-</head>
-<body>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
     <div id="main">
-        <div id="nav">
+      <div id="nav">
         <div>
-            <img src="https://www.bigbasket.com/static/v2489/common/img/bb_logo.png" id="navimg" alt="">
+          <img
+            src="https://www.bigbasket.com/static/v2489/common/img/bb_logo.png"
+            id="navimg"
+            alt=""
+          />
         </div>
         <div>
-            <p id="p1">1860 123 1000</p>
+          <p id="p1">1860 123 1000</p>
         </div>
-        </div>
-        <hr>
-        <div id="box">
-             <div id="box1">
-                <div id="gift">
-                  <h1 class="H1"><span id="addnew">Dilevary Address</span><button id="bt" class="button6">Change</button></h1>
-        
-                 </div>
-                 <div id="dil"> 
-                     <h1 class="H1"> Is this a gift order? <button class="button6" id="butt">ADD MASSAGE</button></h1>
-                    
-                 </div>
-                 <div id="pay">
-                    <h1 class="H1">Delivery Options <button class="button6">Change</button></h1>
-                  
-                 </div> 
-               <div id="payment">
-                <div id="pay1">
-                    <h1> Payment Options</h1>
-          
-                   </div>
-                   <div id="pay2">
-                    <div id="pay21">
-                        <h2>Payment Options with Offers</h2>
-                        <p>Apply Voucher code,if applicable, to avail the offer</p>
-                    </div>
-                    <div id="pay22">
-                        <h2>Other Payment Options</h2>
-                        <p>Credit/Debit, Netbanking, UPI, COD and more</p>
-                    </div>
-                  
-                </div>
-                <div id="NET">
-                    <div id="NET1">
-                        <button>Credit/Debit Card</button>
-                        <button>Netbanking</button>
-                        <button>UPI</button>
-                        <button>Wallet</button>
-                        <button>Cash/Card on Dilevary</button>
-                        
-                    </div>
-                    <div id="NET2">
-                        <h2>Add Credit/Debit Card</h2>
-                        <label>Card number</label><br>
-                        <input id="input1" type="number"><br>
-                        <label>Valid Thru</label>
-                        <input id="valiD" placeholder="MM/YY">
-                       <label>CVV</label>
-                       <input id="cVV" type="number">
-                       <h4><input type="checkbox"> Save this card for faster payment</h4>
-                       <button id="PAY">Place Order & Pay</button>
-                    </div>
-                </div>
-               </div>
-                     </div> 
-            <div id="box2">
-                <h2>Apply Voucher</h2>
-                <div id="box21">
-                <input id="VAl" placeholder="Enter voucher code"><button id="app">Apply</button>
-                <button style="color:#1986ec">1 Voucher applicable</button>
-                 </div>
-                <h2>Order Summary</h2>
-                <div id="box22">
-                    <div>
-                        <h3>Basket Value</h3>
-                        <h3>Delivery Charge</h3>
-                        <hr>
-                        <h3  style="color: black;">Total Amount Payable</h3>
-                        <h3 style="color: #a5cd39">Total Savings</h3>
-                    </div>
-                    <div>
-                        <h3 id="PR">Rs 00</h3>
-                        <h3 style="color: #a5cd39">FREE</h3>
-                        <hr>
-                        <h3 id="BR" style="color: black;">Rs 00</h3>
-                        <h3 id="TR" style="color: #a5cd39">Rs 00</h3>
-                    </div>
-                </div>
+      </div>
+      <hr />
+      <div id="box">
+        <div id="box1">
+          <div id="gift">
+            <h1 class="H1">
+              <span id="addnew">Dilevary Address</span
+              ><button id="bt" class="button6">Change</button>
+            </h1>
+          </div>
+          <div id="dil">
+            <h1 class="H1">
+              Is this a gift order?
+              <button class="button6" id="butt">ADD MASSAGE</button>
+            </h1>
+          </div>
+          <div id="pay">
+            <h1 class="H1">
+              Delivery Options <button class="button6">Change</button>
+            </h1>
+          </div>
+          <div id="payment">
+            <div id="pay1">
+              <h1>Payment Options</h1>
             </div>
-
+            <div id="pay2">
+              <div id="pay21">
+                <h2>Payment Options with Offers</h2>
+                <p>Apply Voucher code,if applicable, to avail the offer</p>
+              </div>
+              <div id="pay22">
+                <h2>Other Payment Options</h2>
+                <p>Credit/Debit, Netbanking, UPI, COD and more</p>
+              </div>
+            </div>
+            <div id="NET">
+              <div id="NET1">
+                <button>Credit/Debit Card</button>
+                <button>Netbanking</button>
+                <button>UPI</button>
+                <button>Wallet</button>
+                <button>Cash/Card on Dilevary</button>
+              </div>
+              <div id="NET2">
+                <h2>Add Credit/Debit Card</h2>
+                <label>Card number</label><br />
+                <input id="input1" min="16" max="16" type="number" /><br />
+                <label>Valid Thru</label>
+                <input id="valiD" placeholder="MM/YY" />
+                <label>CVV</label>
+                <input id="cVV" type="password" />
+                <h4>
+                  <input type="checkbox" /> Save this card for faster payment
+                </h4>
+                <button id="PAY">Place Order & Pay</button>
+              </div>
+            </div>
+          </div>
         </div>
-        
+        <div id="box2">
+          <h2>Apply Voucher</h2>
+          <div id="box21">
+            <input id="VAl" placeholder="Enter voucher code" /><button id="app">
+              Apply
+            </button>
+            <button style="color: #1986ec">1 Voucher applicable</button>
+          </div>
+          <h2>Order Summary</h2>
+          <div id="box22">
+            <div>
+              <h3>Basket Value</h3>
+              <h3>Delivery Charge</h3>
+              <hr />
+              <h3 style="color: black">Total Amount Payable</h3>
+              <h3 style="color: #a5cd39">Total Savings</h3>
+            </div>
+            <div>
+              <h3 id="PR">Rs 00</h3>
+              <h3 style="color: #a5cd39">FREE</h3>
+              <hr />
+              <h3 id="BR" style="color: black">Rs 00</h3>
+              <h3 id="TR" style="color: #a5cd39">Rs 00</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
 <script src="payment.js"></script>

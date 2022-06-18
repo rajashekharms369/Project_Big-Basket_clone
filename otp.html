@@ -51,6 +51,18 @@
             background-color: aquamarine;
             border: none;
         }
+
+        #box>p{
+            margin-top: 25px;
+            font-size: 22px;
+            border: 1px solid hidden;
+            border-radius: 10px;
+            width: 45px;
+            text-align: center;
+            cursor: pointer;
+            background-color: rgb(72, 129, 167);
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -67,31 +79,42 @@
     <h1>Please Fill The OTP For Complete Payment </h1>
     <div id="box">
         <lebel>OTP sended on your linked mobile number</lebel><br>
-        <input id="int" type="number" placeholder="Fill Here">
+        <input id="int" type="password" placeholder="Fill Here">
         <button id="succ">Submit</button>
         <h2 id="result"></h2>
         <h2 id="tran"></h2>
         <div id="final"></div>
-        
+        <p id="displayok">Ok</p>
 </div>
 </body>
 </html>
 <script>
-   
+    let displayok = document.querySelector("#displayok");
+    displayok.style.display = "none";
+
     document.querySelector("#succ").addEventListener("click",function(){
+        // let BUTTON=document.createElement("button");
          let otp="1234"
          let OTP=document.querySelector("#int").value;
          if(otp==OTP){
             document.querySelector("#result").innerText="Payment Successful"
-            let BUTTON=document.createElement("button");
-            BUTTON.innerText="OK";
+            // BUTTON.innerText="OK";
+            displayok.style.display = "block";
             document.querySelector("#tran").innerText="Your transaction id's - 2345538346834647"
             BUTTON.addEventListener("click",function(){
-                window.location.replace("homepage.html")
+                OTP.innerText = 0;
+                alert("Payment successful. Thanks for shopping.!")
+                
             })
             document.querySelector("#final").append(BUTTON);
          }else{
-            alert("worng OTP");
+            alert("Oops..!!! Wrong OTP");
          }
     })
+
+    displayok.addEventListener("click",function(){
+        window.location.replace("index.html");
+        localStorage.removeItem("basket");
+    });
+    
 </script>
