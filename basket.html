@@ -7,7 +7,7 @@
     <title>basket Page</title>
     <link rel="stylesheet" href="basket.css" />
   </head>
-  <body>
+  <body id="body">
     <!-- -------------Navbar---------- -->
 
     <div class="navbar">
@@ -72,19 +72,19 @@
     </div>
     <!-- ------------main-------------- -->
     <div id="main">
-      <h1>Your basket(<span id="Item">0</span> Item)</h1>
+      <h1 id="MainTag">Your basket(<span id="Item">0</span> Item)</h1>
       <hr />
       <button id="promo">VIEW AVAILABLE PROMOS</button>
       <div id="box">
         <div id="tab">
-          <table>
+          <table id="table">
             <thead>
               <tr id="tr1">
-                <th>ITEM DESCRIPTION</th>
-                <th>UNIT PRICE</th>
-                <th>QUANTITY</th>
-                <th>SUBTOTAL</th>
-                <th>SAVINGS</th>
+                <th class="th">ITEM DESCRIPTION</th>
+                <th class="th">UNIT PRICE</th>
+                <th class="th">QUANTITY</th>
+                <th class="th">SUBTOTAL</th>
+                <th class="th">SAVINGS</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -114,34 +114,37 @@
             <div id="box12">
               <div class="bos13" id="total">
                 <div>
-                  <h3>Subtotal</h3>
-                  <h3>Delivery Charges</h3>
+                  <h3 class="h3">Delivery Charges</h3>
                 </div>
                 <div>
-                  <h3 id="chan">Rs. 00</h3>
-                  <h3>**</h3>
+                  <h3 id="chan" class="h3">Rs. 00</h3>
+                  <h3 class="h3">**</h3>
                 </div>
               </div>
               <hr />
               <div class="box13" id="tot">
                 <div>
-                  <h4>TOTAL</h4>
+                  <h4 class="h4">TOTAL</h4>
                 </div>
                 <div>
-                  <h4 id="fin">Rs. 00</h4>
+                  <h4 id="fin" class="h4">Rs. 00</h4>
                 </div>
               </div>
-              <h5>* For this order: Accepted food coupon is Rs. 0.00</h5>
+              <h5 id="h5">
+                * For this order: Accepted food coupon is Rs. 0.00
+              </h5>
               <hr />
               <div id="box14">
                 <button id="check">CHECKOUT</button>
-                <h2>** Actual delivery charges computed at checkout time</h2>
+                <h2 id="h2">
+                  ** Actual delivery charges computed at checkout time
+                </h2>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h6>Missed Something?</h6>
+      <h6 id="h6">Missed Something?</h6>
       <hr />
       <div id="else">
         <div id="else1">
@@ -155,38 +158,42 @@
           <hr />
         </div>
         <div id="else2">
-          <div>
+          <div class="DIVD">
             <img
+              class="Img"
               src="https://www.bigbasket.com/media/uploads/p/s/40154922_3-nescafe-gold-blend-instant-coffee-powder-rich-smooth.jpg"
               alt=""
             />
             <h1>Blend Instant Coffee Powder- Arabica</h1>
-            <p>50gm</p>
+            <p id="PP">50gm</p>
             <p>Rs. 295</p>
             <button>ADD</button>
           </div>
-          <div>
+          <div class="DIVD">
             <img
+              class="Img"
               src="https://www.bigbasket.com/media/uploads/p/s/40145969_5-the-laughing-cow-creamy-cheese-triangles.jpg"
               alt=""
             />
             <h1>Creamy Chease Triangles</h1>
-            <p id="p1">120 gm</p>
+            <p id="PPP">120 gm</p>
             <p>Rs. 110</p>
             <button>ADD</button>
           </div>
-          <div>
+          <div class="DIVD">
             <img
+              class="Img"
               src="https://www.bigbasket.com/media/uploads/p/s/1214840_4-saffola-ring-noodles-oodles-yummy-masala.jpg"
               alt=""
             />
             <h1>Ring Noodles- Oodles Yummy Masala</h1>
-            <p>1 pack</p>
+            <p id="PPPP">1 pack</p>
             <p>Rs. 180</p>
             <button>ADD</button>
           </div>
-          <div>
+          <div class="DIVD">
             <img
+              class="Img"
               src="https://www.bigbasket.com/media/uploads/p/s/40188092_8-bb-royal-100-pure-honey.jpg"
               alt=""
             />
@@ -197,9 +204,11 @@
           </div>
         </div>
       </div>
+      <hr id="hr" />
     </div>
-    </body>
-    </html>
-    <script src="basket.js"></script>
-
-   
+    <div id="fOOter">
+      <img id="footimg" src="https://i.postimg.cc/fb7WsTMr/foot.png" />
+    </div>
+  </body>
+</html>
+<script src="basket.js"></script>

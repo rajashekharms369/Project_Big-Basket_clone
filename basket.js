@@ -12,6 +12,7 @@ td1.innerText=ele.name;
 let td2=document.createElement("td");
 td2.innerText=ele.price;
 let td3=document.createElement("td");
+
 let INPUT=document.createElement("input");
 INPUT.id="raj";
 INPUT.type="number";
@@ -19,6 +20,7 @@ INPUT.min=1;
 INPUT.placeholder="1";
 let INPUT1=document.createElement("button");
 INPUT1.innerText="ADD";
+
 INPUT1.id="syam"
 let td4=document.createElement("td");
 let td5=document.createElement("td");
