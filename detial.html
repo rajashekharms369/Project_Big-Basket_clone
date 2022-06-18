@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits And Vegetables: Buy Fruits And Vegetables Online at Our Online Vegetable Store at great price</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="shortcut icon" href="https://www.bbassets.com/static/v2557/images/favicon.ico?v=2557"
+        type="image/x-icon">
+    <!-- <link rel="stylesheet" href="product.css"> -->
+    <link rel="stylesheet" href="detial.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-flex">
+            <img src="https://i.postimg.cc/rp54sJH2/logo.png" alt="" />
+
+            <div id="input">
+                <i class="fa fa-search"></i> &nbsp;<input class="fa fa-search" type="search"
+                    placeholder="  Search for Products..." />
+            </div>
+
+            <div id="address">
+                <img
+                    src="https://img.icons8.com/external-glyph-zulfa-mahendra/48/undefined/external-delivery-food-delivery-2-glyph-zulfa-mahendra.png" />
+                <p>Get in 6 hrs,</p>
+                &nbsp;
+                <p>Home: Sector-47, Gurgaon</p>
+            </div>
+
+            <div id="user-logo">
+                <img src="https://img.icons8.com/ios-glyphs/30/undefined/name.png" />
+            </div>
+
+            <div id="cart-logo">
+                <a href="basket.html"> <img
+                        src="https://img.icons8.com/material/24/undefined/shopping-cart--v1.png" /></a>
+                <p id="numitem"></p>
+            </div>
+        </div>
+
+        <div class="nav-flex">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                    <p>Shop by Category &nbsp; <span id="downarrow">&#9660;</span></p>
+                </button>
+            </div>
+
+            <div id="efv">
+                <p>Exotic Fruite & Vegetables</p>
+            </div>
+            <div id="tea">
+                <p>Tea</p>
+            </div>
+            <div id="ghee">
+                <p>Ghee</p>
+            </div>
+            <div id="nandhini">
+                <p>Nandhini</p>
+            </div>
+            <div id="offers">
+                <img src="https://img.icons8.com/metro/26/undefined/percentage2--v2.png" />
+                <p>&nbsp; Offers</p>
+            </div>
+            <div id="offers">
+                <img src="https://img.icons8.com/metro/26/undefined/percentage2--v2.png" />
+                <p>&nbsp;Offers</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="div1">
+        <div class="left">
+            <h4>Category</h4>
+            <hr class="line">
+            <p>Fruits & Vegetables</p>
+            <ul>
+                <!-- <li>Cuts & Sprouts (134)</li> -->
+                <li>Exotic Fruits & Veggies (142)</li>
+                <!-- <li>Flower Bouquets, Bunches (21)</li> -->
+                <li>Fresh Fruits (181)</li>
+                <!-- <li>Fresh Vegetables (349)</li> -->
+                <!-- <li>Herbs & Seasonings (61)</li> -->
+                <li>Organic Fruits & Vegetables(107)</li>
+            </ul>
+            <h4>Brand</h4>
+            <hr class="line">
+
+            <input class="sarch" type="text" placeholder="Sarch by Brand">
+            <div class="fas fa-search"></div>
+
+            <div class="box">
+                <div class="chk">
+
+                    <label for="checkbox">bb combo</label>
+
+                </div>
+                <div class="chk">
+
+                    <label for="checkbox">Brotos</label>
+                </div>
+                <div class="chk">
+
+                    <label for="checkbox">Fresco </label>
+                </div>
+                <div class="chk">
+
+                    <label for="checkbox">Fresho</label>
+                </div>
+                <div class="chk">
+
+                    <label for="checkbox">Gopalan Organic</label>
+                </div>
+                <div class="chk">
+
+                    <label for="checkbox">Hoovu Fresh</label>
+                </div>
+                <div class="chk">
+
+                    <label for="checkbox">Organics</label>
+                </div>
+                <div class="chk">
+
+                    <label for="checkbox">Tadaa</label>
+                </div>
+                <div class="chk">
+
+                    <label for="checkbox">Trikaya</label>
+                </div>
+
+                <div class="chk">
+
+                    <label for="checkbox">USA</label>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="imgapend" class="pdetail">
+
+        </div>
+        <div class="rightdiv">
+            <p id="brand"></p>
+            <p id="name"></p>
+            <p><strike id="strikoff"></strike></p>
+            <h2 id="price"></h2>
+            <h5 id="saving"></h5>
+            <input class="qty1" type="number" value="1">
+            <button id="addtocart" class="btngroup">ADD TO BASKET <span class="fa fa-shopping-basket"></span> </button>
+            <button class="save">save</button><br>
+            <h3 class="fas fa-truck">Standard: 22 Jun 3: 00PM 7:30PM</h3>
+            <p>Pack Size</p>
+            <div class="boxdiv">500 g <span class="fas fa-check"></span></div>
+            <div class="boxdiv"> 1 kg <span class="fas fa-check"></span></div>
+            <!-- <div class="boxdiv">250 g <span class="fas fa-check"></span></div> -->
+            <div class="boxdiv"> 2 kg <span class="fas fa-check"></span></div>
+            <!-- <div class="boxdiv"> 5 kg <span class="fas fa-check"></span></div> -->
+        </div>
+    </div>
+
+    <div class="bottom">
+        <h1 id="pname"></h1>
+        <hr>
+        <ul>
+            <li>A popular sweet-tasting root vegetable, <span id="pnameAgain"></span> are narrow and cone shaped.</li>
+            <li>They have thick, fleshy, deeply colored root, which grows underground, and feathery green leaves that
+                emerge
+                above the ground.</li>
+            <li>While these greens are fresh tasting and slightly bitter, the carrot roots are crunchy textured with a
+                sweet
+                and minty aromatic taste.</li>
+            <li>Fresho brings you the flavour and richness of the finest crispy and juicy carrots that are locally grown
+                and
+                the best of the region.</li>
+            <li>Do not forget to check our delicious recipe -
+                https://www.bigbasket.com/cookbook/recipes/912/carrot-halwa/
+            </li>
+        </ul>
+        <hr>
+        <ul>
+            <li><span class="nameagain"></span> provide the highest content of vitamin A of all the vegetables.</li>
+            <li>Brightly orange colored carrots have pigments like carotenoids and flavonoids, that provide several
+                antioxidants and act as a defense against cancer.</li>
+        </ul>
+        <hr>
+        <ul>
+            <li>
+                Refrigerate carrots in a mesh bag. Alternatively to retain freshness and for more longevity, trim off
+                the
+                greens and put whole carrots in a container of water and refrigerate.</li>
+            <li>
+                With this method, they stay nice and crunchy. If the water starts to look cloudy, change it with fresh
+                water.
+            </li>
+        </ul>
+        <hr>
+        <ul>
+            <li>EAN Code: 10000072</li>
+            <li>
+                Sourced & Marketed by: Supermarket Grocery Supplies Pvt. Ltd, No. 7, Service Road, Off 100 Feet Road
+                IndiranagarLandmark: Above HDFC BankBangalore, Karnataka 560071
+            </li>
+        </ul>
+        <hr>
+        <ul>
+            <li>
+                <h3>Variable weight policy</h3>
+            </li>
+            <li>
+                Please note that the item(s) in this product may vary slightly in size and weight. Hence, the actual
+                weight
+                of the product delivered can have a small variance. You will be billed based on the actual weight during
+                order processing.
+            </li>
+        </ul>
+    </div>
+    <h1 class="bottom-h1">Rating and Reviews</h1>
+    <div class="bottom-box">
+        <h2>Want to rate this product?
+            You can rate and review this product
+            only after purchasing from bigbasket</h2>
+    </div>
+
+    <div id="apend">
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    let detail = JSON.parse(localStorage.getItem("productdetail"))
+    detail.forEach(function (elem) {
+
+        let img = document.createElement("img")
+        img.setAttribute("src", elem.image)
+        img.setAttribute("class", "divimg")
+        document.querySelector("#imgapend").append(img)
+        document.querySelector("#brand").innerText = elem.brand
+        document.querySelector("#name").innerText = elem.name
+        document.querySelector("#strikoff").innerText = elem.strike
+        document.querySelector("#price").innerText = "Rs" + elem.price
+        document.querySelector("#pname").innerHTML = elem.name
+        document.querySelector("#pnameAgain").innerText = elem.name
+        let x = document.querySelectorAll(".nameagain")
+        for (let i = 0; i < x.length; i++) {
+            x[i].innerText = elem.name
+        }
+
+
+        document.querySelector("#addtocart").addEventListener("click", function () {
+            addtocart(elem)
+        })
+    })
+    let Array = JSON.parse(localStorage.getItem("basket")) || [];
+    function addtocart(elem) {
+        let obj = {
+            image: elem.imgurl,
+            name: elem.name,
+            strike: elem.strike,
+            price: elem.mrp,
+        };
+        Array.push(obj);
+        console.log(Array);
+        localStorage.setItem("basket", JSON.stringify(Array));
+    }
+    let deatipagedata = [
+        {
+            discount: "Get 20% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000201_15-fresho-tomato-hybrid.jpg",
+            brand: "Fresho",
+            name: "Tomato - Hybrid",
+            Kg: "500g",
+            strike: "Rs 43.75",
+            mrp: 35,
+            dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
+        },
+
+        {
+            discount: "Get 20% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000031_21-fresho-banana-yelakki.jpg",
+            brand: "Fresho",
+            name: "Banana - Yelakki",
+            Kg: "1kg",
+            strike: "Rs 145",
+            mrp: 116,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 20% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg",
+            brand: "Fresho",
+            name: "Cauliflower",
+            Kg: "1 Pc  approx 400 g",
+            strike: "Rs 25",
+            mrp: 20,
+            dur: "Standard Delivery  23 June  9:00AM - 1:30PM",
+        },
+
+        {
+            discount: "Get 20% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000207_23-fresho-watermelon-small.jpg",
+            brand: "Fresho",
+            name: "Watermelon - Small",
+            Kg: "1 Pc  2.7 kg",
+            strike: "Rs 53",
+            mrp: 43,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 20% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/1203441_1-fresho-onion-1-kg-new-potato-1-kg-tomato-hybrid-1-kg.jpg",
+            brand: "Fresho",
+            name: "Onion 1 kg + New Potato 1 kg + Tomato - Hybrid 1 kg",
+            Kg: "Combo 3 items",
+            strike: "Rs 160",
+            mrp: 128,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 20% OFF ",
+
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000335_15-fresho-lemon.jpg",
+            brand: "Fresho",
+            name: "Lemon",
+            Kg: "1 Kg",
+            strike: "Rs 175",
+            mrp: 129,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 20% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/20000979_12-fresho-palak-cleaned-without-roots.jpg",
+            brand: "Fresho",
+            name: "Palak - Cleaned, without roots",
+            Kg: "250 g",
+            strike: "Rs 35.90",
+            mrp: 28.5,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+
+        {
+            discount: "Get 24% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000102_17-fresho-cucumber.jpg",
+            brand: "Fresho",
+            name: "Cucumber",
+            Kg: "1 Kg",
+            strike: "Rs 27",
+            mrp: 21,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 24% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000302_4-fresho-alphonso-mango-badami.jpg",
+            brand: "Fresho",
+            name: "Alphonso Mango - Badami",
+            Kg: "1 kg",
+            strike: "Rs 175",
+            mrp: 140,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 24% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000069_20-fresho-capsicum-green.jpg",
+            brand: "Fresho",
+            name: "Capsicum - Green",
+            Kg: "500 g",
+            strike: "Rs 80",
+            mrp: 64,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 22% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/40089743_2-fresho-beans-haricot.jpg",
+            brand: "Fresho",
+            name: "Beans - Haricot",
+            Kg: "250 g",
+            strike: "Rs 21",
+            mrp: 17,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 20% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000273_16-fresho-mushrooms-button.jpg",
+            brand: "Fresho",
+            name: "Mushrooms - Button",
+            Kg: "1 pac approx 200g",
+            strike: "Rs 60",
+            mrp: 55,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 20% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000326_14-fresho-coriander-leaves.jpg",
+            brand: "Fresho",
+            name: "Coriander Leaves",
+            Kg: "1kg",
+            strike: "Rs 102",
+            mrp: 81,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 25% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000269_30-fresho-pomegranate.jpg",
+            brand: "Fresho",
+            name: "Pomegranate",
+            Kg: "4 pcs (approx. 800 - 880 g)",
+            strike: "Rs 241",
+            mrp: 193,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 25% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000093_16-fresho-coconut-medium.jpg",
+            brand: "Fresho",
+            name: "Coconut - Medium",
+            Kg: "1 pc (approx. 450g to 500)",
+            strike: "Rs 27",
+            mrp: 21,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 25% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000066_25-fresho-cabbage.jpg",
+            brand: "Fresho",
+            name: "Cabbage",
+            Kg: "1 pc (approx. 500 g to 800 g)",
+            strike: "Rs 45",
+            mrp: 36,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 25% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000047_21-fresho-beetroot.jpg",
+            brand: "Fresho",
+            name: "Beetroot",
+            Kg: "250g",
+            strike: "Rs 16",
+            mrp: 13,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 18% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/40018523_4-fresho-cucumber-english.jpg",
+            brand: "Fresho",
+            name: "Cucumber - English",
+            Kg: "250g",
+            strike: "Rs 16",
+            mrp: 13,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 18% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/10000027_28-fresho-banana-robusta.jpg",
+            brand: "Fresho",
+            name: "Banana - Robusta",
+            Kg: "500 g",
+            strike: "Rs 32.50",
+            mrp: 26,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+        {
+            discount: "Get 21% OFF ",
+            imgurl:
+                "https://www.bigbasket.com/media/uploads/p/s/1203781_1-fresho-apple-red-delicious-washington-regular.jpg",
+            brand: "Fresho",
+            name: "Apple - Red Delicious / Washington, Regular",
+            Kg: "2x 4pcs",
+            strike: "Rs 325",
+            mrp: 265,
+            dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
+        },
+    ]
+    showdisplay(deatipagedata)
+    function showdisplay(deatipagedata) {
+        deatipagedata.forEach(function (elem) {
+            let div = document.createElement("div");
+            div.addEventListener("click", function () {
+                runfunction(elem);
+            });
+            let div2 = document.createElement("div");
+            div2.setAttribute("class", "discount");
+            div2.innerText = elem.discount;
+            let img = document.createElement("img");
+            img.setAttribute("src", elem.imgurl);
+            img.setAttribute("class", "detail");
+            let brand = document.createElement("p");
+            brand.setAttribute("class", "brand");
+            brand.innerText = elem.brand;
+            let name = document.createElement("p");
+            name.setAttribute("class", "name");
+            name.innerText = elem.name;
+            let input = document.createElement("select");
+            input.setAttribute("class", "select");
+            let opt1 = document.createElement("option");
+            opt1.innerText = elem.Kg;
+            let opt2 = document.createElement("option");
+            opt2.innerText = "1 kg";
+            let opt3 = document.createElement("option");
+            opt3.innerText = "2 kg";
+            input.append(opt1, opt2, opt3);
+
+            let mrp = document.createElement("div");
+            mrp.setAttribute("class", "price");
+            let price = document.createElement("p");
+            price.innerText = "Rs" + elem.mrp;
+            let str = document.createElement("strike");
+            str.setAttribute("class", "my-10");
+
+            str.innerText = elem.strike;
+            mrp.append(str, price);
+            let main = document.createElement("div");
+            main.setAttribute("class", "bg-gray");
+            let delivery = document.createElement("h5");
+            delivery.setAttribute("class", "fas fa-truck");
+            delivery.setAttribute("id", "text");
+            // delivery.padStart(1, " ");
+            delivery.innerText = elem.dur;
+            let div3 = document.createElement("div");
+            div3.setAttribute("class", "input");
+            let qty = document.createElement("label");
+            qty.htmlFor = "input2";
+            qty.innerText = "Qty";
+            let input2 = document.createElement("input");
+            input2.setAttribute("class", "width");
+            input2.value = "1";
+            let btn = document.createElement("button");
+            btn.innerText = "ADD";
+            btn.style.backgroundColor = "#ffbf07";
+            btn.addEventListener("click", function () {
+                addtocart(elem);
+            });
+
+            div3.append(qty, input2, btn);
+            main.append(mrp, delivery, div3);
+            div.append(div2, img, brand, name, input, main);
+            document.querySelector("#apend").append(div);
+        })
+    }
+    // document.querySelector("#addtocart").addEventListener("click", addtocart)
+
+</script>
