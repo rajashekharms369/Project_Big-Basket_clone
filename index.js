@@ -1,4 +1,4 @@
-/*-----------------------Header JS part-----------------*/
+/*-----------------Header footer JS-------------------- */
 
 var mybutton = document.getElementById("myBtn");
 
@@ -37,19 +37,66 @@ window.onclick = function (event) {
   }
 };
 
-document.getElementById("user-logo").addEventListener("click", toggle);
+document.querySelector(".container2").addEventListener("click", toggle);
+// document.getElementById('user-logo').addEventListener('click',toggle)
+document.getElementById("cancel").addEventListener("click", toggle);
 
 function toggle() {
   var blur = document.getElementById("blur2");
   blur.classList.toggle("active");
   var popup = document.getElementById("popup2");
   popup.classList.toggle("active");
+  console.log("hello");
 }
 
 document.querySelector("#logo").addEventListener("click", function () {
   location.reload();
 });
 
+arrdata = JSON.parse(localStorage.getItem("signupdata")) || [];
+
+document.querySelector("#submit").addEventListener("click", logindata);
+
+function logindata(event) {
+  event.preventDefault();
+
+  let mail = document.querySelector("#email").value;
+  let pswrd = document.querySelector("#epass").value;
+
+  let auth = JSON.parse(localStorage.getItem("auth"));
+
+  for (let i = 0; i < arrdata.length; i++) {
+    if (arrdata[i].email == mail) {
+      if (arrdata[i].password == pswrd) {
+        window.location.href = "index.html";
+        auth = true;
+        localStorage.setItem("auth", JSON.stringify(auth));
+        document.querySelector(
+          "#blur2"
+        ).innerHTML = `<div id="user-logo"></div>`;
+        document.querySelector("#user-logo>img").src =
+          "https://img.icons8.com/ios-glyphs/50/undefined/name.png";
+
+        document.querySelector("#user-logo>img").style.margin = "0";
+
+        let background = document.querySelector("#blur2");
+      } else {
+        alert("please enter valid password");
+      }
+    } else {
+      alert("please enter valid email");
+    }
+  }
+}
+console.log(document.querySelector("#user-logo").innerHTML);
+let a = localStorage.getItem("auth");
+a = JSON.parse(a);
+if (a == true) {
+  document.querySelector(
+    "#user-logo"
+  ).innerHTML = `<img style="margin-top:-2px;" src = "https://img.icons8.com/ios-glyphs/50/undefined/name.png"/>`;
+  console.log(document.querySelector("#user-logo").innerHTML);
+}
 // setInterval(function(){alert("Hello")},3000);
 
 /*-----------------Main body JS part-------------------*/
@@ -183,7 +230,7 @@ let crauser1Array = [
   "https://www.bigbasket.com/media/uploads/banner_images/hp_b_h_m_tbcd_snacking-store_460-250522.jpg",
   "https://www.bigbasket.com/media/uploads/banner_images/hp_b_h_m_bev_coldpressed-juice_460-250522.jpg",
   "https://www.bigbasket.com/media/uploads/banner_images/hp_b_h_m__bcd_tasties-origins_460-250522.jpg",
-  "https://www.bigbasket.com/media/uploads/banner_images/hp_b_h_m_bev_coldpressed-juice_460-250522.jpg",
+  "https://www.bigbasket.com/media/uploads/banner_images/hp_DT_apples-blr_1600x460-180622.jpg",
   "https://www.bigbasket.com/media/uploads/banner_images/hp_b_h_GM-duper-deals_460-250522.jpg",
 ];
 
@@ -361,7 +408,7 @@ array.forEach((el) => {
   p1.innerText = el.brand;
   let h3 = document.createElement("h3");
   h3.innerText = el.name;
-  h3.style.color = "#565656";
+  h3.style.color = "#000000";
   h3.style.fontWeight = "lighter";
   // h3.style.fontFamily = "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   let select = document.createElement("select");
@@ -385,6 +432,10 @@ array.forEach((el) => {
   let input = document.createElement("input");
   let button = document.createElement("button");
   button.innerText = "ADD";
+  button.addEventListener("click", function () {
+    let pval = +document.querySelector("#numitem").innerText;
+    document.querySelector("#numitem").innerText = pval + 1;
+  });
   let span2 = document.createElement("span");
   span2.style.marginLeft = "8px";
   let img2 = document.createElement("img");

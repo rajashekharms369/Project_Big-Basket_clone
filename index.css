@@ -178,12 +178,12 @@ h2 {
 }
 
 #bestsellers > div > div > P:nth-child(2) {
-  margin: 10px 0px;
+  margin: 8px 0px 0px 0px;
   color: gray;
 }
 
 #bestsellers > div > div > h3 {
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   font-size: 17px;
 }
 
@@ -210,7 +210,7 @@ h2 {
 #bestsellers > div > div > div > button {
   box-sizing: border-box;
   height: 25px;
-  margin: 15px 0px;
+  margin: 8px 0px;
   background-color: #fade7a;
   border: hidden;
   margin-left: 8px;
@@ -244,7 +244,7 @@ h2 {
   height: 40px;
   font-size: 25px;
   position: absolute;
-  top: 55%;
+  top: 50%;
   background-color: white;
   border: 1px solid rgba(185, 185, 185, 0.5);
 }
@@ -268,7 +268,7 @@ h2 {
 #bestsellers > div {
   display: grid;
   grid-template-columns: repeat(10, 19.5%);
-  grid-template-rows: repeat(1, 470px);
+  grid-template-rows: repeat(1, 440px);
   gap: 5px;
 }
 
@@ -803,6 +803,7 @@ h2 {
 #information a {
   color: #6ad040;
   text-decoration: none;
+  font-size: 20px;
 }
 
 #information p {

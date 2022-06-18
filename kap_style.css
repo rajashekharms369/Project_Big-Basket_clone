@@ -1,0 +1,106 @@
+body {
+  background-image: url("https://hospibuz.com/wp-content/uploads/2018/04/BigBasket-Online-Shopping.jpg");
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
+  background-size: cover;
+  position: relative;
+  width: 95%;
+  height: 85vh;
+}
+h3 {
+  text-align: center;
+  color: rgb(141, 205, 46);
+}
+#main {
+  width: 24%;
+  height: 80%;
+  margin: auto;
+  margin-top: 5%;
+  /* border: 2px solid white; */
+  background-color: white;
+  padding-left: 1.5%;
+  padding-top: 10px;
+  justify-content: center;
+  line-height: 40px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+}
+/* label{
+    font-size: larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black
+} */
+form > input {
+  margin: auto;
+  width: 90%;
+  height: 40px;
+  /* border: 0.5px solid rgb(168, 164, 164); */
+  margin-bottom: 6%;
+  margin-top: 4%;
+  border: none;
+  border-bottom: 0.5px solid rgb(168, 164, 164);
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 5px;
+}
+#submit {
+  margin: auto;
+  width: 91%;
+  margin-top: 20px;
+  color: rgb(121, 183, 30);
+  margin-bottom: 5px;
+  height: 50px;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+#submit:hover {
+  color: white;
+  background-color: rgb(71, 146, 121);
+}
+#submit2 {
+  margin: auto;
+  width: 91%;
+  margin-top: 20px;
+  color: rgb(121, 183, 30);
+  margin-bottom: 5px;
+  height: 50px;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+#submit2:hover {
+  color: white;
+  background-color: rgb(71, 146, 121);
+}
+p {
+  text-align: center;
+  font-size: medium;
+  margin-left: -5px;
+}
+a {
+  text-decoration: none;
+  color: rgb(141, 205, 46);
+  font-size: medium;
+}
+#cnfrm {
+  width: 24%;
+  margin: auto;
+  margin-top: 10%;
+  height: 300px;
+  background-color: white;
+  padding-left: 1.5%;
+  padding-top: 5%;
+  line-height: 40px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+}
