@@ -580,5 +580,8 @@ color: black;
 #hr{
     margin-top: 15px;
 }
+#footimg:hover{
+    cursor: pointer;
+}
 
 /* --------footer------------ */
