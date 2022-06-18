@@ -99,6 +99,18 @@ if (a == true) {
 }
 // setInterval(function(){alert("Hello")},3000);
 
+/* ------------Adding Cart Link---------------- */
+let cartLogo = document.querySelector("#cart-logo");
+console.log(cartLogo);
+cartLogo.addEventListener("click", function () {
+  auth = JSON.parse(localStorage.getItem("auth"));
+  if (auth) {
+    window.location.href = "basket.html";
+  } else {
+    window.location.href = "login.html";
+  }
+});
+
 /*-----------------Main body JS part-------------------*/
 
 /*-------------Crauser2 JS Part----------------*/
@@ -283,10 +295,9 @@ let array = [
     brand: "Fresho",
     name: "Onion",
     Kg: "5 Kg",
-    strike: "Rs 120",
-    mrp: "115",
+    strike: "120",
+    mrp: 115,
     dur: "Standard Delivery 22 June 9:00 AM  1:30 PM",
-
     ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
   },
   {
@@ -296,8 +307,8 @@ let array = [
     brand: "Fresho",
     name: "Patato",
     Kg: "2 kg",
-    strike: "Rs 87.50",
-    mrp: "70",
+    strike: "87.50",
+    mrp: 70,
     dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
     ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
   },
@@ -308,8 +319,8 @@ let array = [
     brand: "Fresho",
     name: "Banganapalli Mango",
     Kg: "1 kg",
-    strike: "Rs 119.5",
-    mrp: "91",
+    strike: "119.5",
+    mrp: 91,
     dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
     ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
   },
@@ -320,8 +331,8 @@ let array = [
     brand: "Fresho",
     name: "Carrot-orange",
     Kg: "1 kg",
-    strike: "Rs 81.25",
-    mrp: "61",
+    strike: "81.25",
+    mrp: 61,
     dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
     ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
   },
@@ -332,8 +343,8 @@ let array = [
     brand: "Fresho",
     name: "Tomato - Local",
     Kg: "1 kg",
-    strike: "Rs 100",
-    mrp: "70",
+    strike: "100",
+    mrp: 70,
     dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
     ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
   },
@@ -344,8 +355,8 @@ let array = [
     brand: "Fresho",
     name: "Tender Coconut - Medium",
     Kg: "4 X 1 Pc",
-    strike: "Rs 215",
-    mrp: "172",
+    strike: "215",
+    mrp: 172,
     dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
     ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
   },
@@ -356,8 +367,8 @@ let array = [
     brand: "Fresho",
     name: "Ladies Finger",
     Kg: "250g",
-    strike: "Rs 10.94",
-    mrp: "8.75",
+    strike: "10.94",
+    mrp: 8.75,
     dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
     ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
   },
@@ -368,8 +379,8 @@ let array = [
     brand: "Fresho",
     name: "Tomato - Hybrid",
     Kg: "500g",
-    strike: "Rs 43.75",
-    mrp: "35",
+    strike: "43.75",
+    mrp: 35,
     dur: "Standard Delivery 22 June  9:00 AM  1:30 PM",
     ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
   },
@@ -380,8 +391,8 @@ let array = [
     brand: "Fresho",
     name: "Banana - Yelakki",
     Kg: "1kg",
-    strike: "Rs 145",
-    mrp: "116",
+    strike: "145",
+    mrp: 116,
     dur: "Standard Delivery  22 June  9:00AM - 1:30PM",
     ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
   },
@@ -392,8 +403,8 @@ let array = [
     brand: "Fresho",
     name: "Cauliflower",
     Kg: "1 Pc  approx 400 g",
-    strike: "Rs 25",
-    mrp: "20",
+    strike: "25",
+    mrp: 20,
     dur: "Standard Delivery  23 June  9:00AM - 1:30PM",
     ref: "https://www.bing.com/th?id=OIP.rIC2F2OmvKkH9lBrc4bA9gHaHo&w=96&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
   },
@@ -433,8 +444,7 @@ array.forEach((el) => {
   let button = document.createElement("button");
   button.innerText = "ADD";
   button.addEventListener("click", function () {
-    let pval = +document.querySelector("#numitem").innerText;
-    document.querySelector("#numitem").innerText = pval + 1;
+    addtocart(el);
   });
   let span2 = document.createElement("span");
   span2.style.marginLeft = "8px";
@@ -495,3 +505,23 @@ bestsellersSlide.forEach((el) => {
     el.scrollLeft -= newv2;
   });
 });
+
+/*-----------------Add to cart----------------*/
+let basket = JSON.parse(localStorage.getItem("basket")) || [];
+
+document.querySelector("#numitem").innerText = basket.length;
+
+function addtocart(el) {
+  let pval = +document.querySelector("#numitem").innerText;
+  document.querySelector("#numitem").innerText = pval + 1;
+  let obj = {
+    image: el.imgurl,
+    name: el.name,
+    strike: el.strike,
+    price: el.mrp,
+  };
+
+  basket.push(obj);
+  localStorage.setItem("basket", JSON.stringify(basket));
+  alert("Product added to Cart successfully..!!");
+}

@@ -292,6 +292,13 @@ h2 {
   border: none;
 }
 
+#bestsellers > h2 > button > a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 2px;
+}
+
 #bestsellers > h2 + hr {
   border: 0.5px solid #ebebeb;
   margin-bottom: 20px;
