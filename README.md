@@ -1,6 +1,7 @@
 # Bigbasket Clone
 
-A web application to buy groceries online.
+Bigbasket is an online supermarket for all the usual daily needs.
+The Project is a front-end clone of the big-basket.com itself. All the related further info along with source code is available.
 
 ## Run Project : https://jazzy-cupcake-d4c618.netlify.app/
 
